@@ -1,4 +1,5 @@
 ---
+description: "setNCharacterStream Method to java.io.Reader object - long"
 title: "setNCharacterStream Method to java.io.Reader object - long | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 36396dc9-f109-4da0-bd64-726704046bbf
 author: David-Engel
 ms.author: v-daenge

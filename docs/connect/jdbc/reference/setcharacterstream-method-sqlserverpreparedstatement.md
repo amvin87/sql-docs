@@ -1,4 +1,5 @@
 ---
+description: "setCharacterStream Method (SQLServerPreparedStatement)"
 title: "setCharacterStream Method (SQLServerPreparedStatement) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: fe13326b-799d-4bf3-b4f1-32ab1841d0ed
 author: David-Engel
 ms.author: v-daenge

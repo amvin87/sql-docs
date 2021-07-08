@@ -5,7 +5,7 @@ description: A description of the pods typically deployed in a SQL Server Big Da
 author: mihaelablendea 
 ms.author: mihaelab
 ms.reviewer: mikeray
-ms.date: 03/30/2020
+ms.date: 02/11/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
@@ -13,7 +13,7 @@ ms.technology: big-data-cluster
 
 # Resources deployed with Big Data Cluster
 
-[!INCLUDE[tsql-appliesto-ssver15-xxxx-xxxx-xxx](../includes/tsql-appliesto-ssver15-xxxx-xxxx-xxx.md)]
+[!INCLUDE[SQL Server 2019](../includes/applies-to-version/sqlserver2019.md)]
 
 This article describes the resources a SQL Server Big Data Cluster deploys.
 
@@ -25,7 +25,7 @@ This article describes the pods deployed with `aks-dev-test-ha` profile and incl
 kubectl get pods -n <namespace>
 ```
 
-Replace `<namespace>` with the Kubernetes namespace of your big data cluster. 
+Replace `<namespace>` with the name of your big data cluster. 
 
 For more information, see [How to deploy [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] on Kubernetes](deployment-guidance.md#configfile).
 
@@ -176,23 +176,12 @@ Only one gateway is supported.
 
 ## Open-source container references
 
-Some containers are developed by open-source projects. For information about open-source containers used, see:
-
-- [Elasticsearch](https://www.elastic.co/)
-- [Kibana](https://www.elastic.co/kibana)
-- [InfluxDB](https://www.influxdata.com)
-- [Grafana](https://grafana.com/)
-- [Fluent Bit](https://docs.fluentbit.io/manual/about/what-is-fluent-bit)
-- [HDFS DataNode](concept-storage-pool.md)
-- [HDFS NameNode](https://cwiki.apache.org/confluence/display/HADOOP2/NameNode) 
-- [Spark](configure-spark-hdfs.md)
-- [ZooKeeper](https://kubernetes.io/docs/tutorials/stateful-application/zookeeper/) 
-
+For for specific open-source projects and versions, see [Open-source software reference](reference-open-source-software.md).
 
 ## Next steps
 
 To learn more about the [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)], see the following resources:
 
 - [What are [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ver15.md)]?](big-data-cluster-overview.md)
-- [Workshop: Microsoft [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] Architecture](https://github.com/Microsoft/sqlworkshops/tree/master/sqlserver2019bigdataclusters)
+- [Workshop: Microsoft [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] Architecture](https://github.com/microsoft/sqlworkshops-bdc)
 - [How to deploy [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] on Kubernetes](deployment-guidance.md#configfile)

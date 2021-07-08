@@ -1,12 +1,13 @@
 ---
-title: "getTimestamp Method (java.lang.String, java.util.Calendar) | Microsoft Docs"
+description: "getTimestamp Method (java.lang.String, java.util.Calendar) (SQLServerResultSet)"
+title: "getTimestamp Method (java.lang.String, java.util.Calendar) (SQLServerResultSet) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerResultSet.getTimestamp (java.lang.String, java.util.Calendar)"
 apilocation: 

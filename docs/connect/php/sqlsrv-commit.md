@@ -1,4 +1,5 @@
 ---
+description: "sqlsrv_commit"
 title: "sqlsrv_commit | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/26/2018"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "sqlsrv_commit"
 apitype: "NA"

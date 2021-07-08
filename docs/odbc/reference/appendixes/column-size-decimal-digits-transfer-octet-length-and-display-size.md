@@ -1,4 +1,5 @@
 ---
+description: "Column Size, Decimal Digits, Transfer Octet Length, and Display Size - ODBC"
 title: "Column Size, Decimal Digits, Transfer Octet Length, Display Size | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "display size of data types [ODBC]"
   - "data types [ODBC], column size"

@@ -1,12 +1,13 @@
 ---
-title: "PDO::rollback | Microsoft Docs"
+title: "PDO::rollBack"
+description: "API reference for the PDO::rollBack function in the Microsoft PDO_SQLSRV Driver for PHP for SQL Server."
 ms.custom: ""
-ms.date: "01/19/2017"
+ms.date: "08/10/2020"
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: d918c1e3-1be0-4001-b3b0-000db6d9e8b8
 author: David-Engel
 ms.author: v-daenge

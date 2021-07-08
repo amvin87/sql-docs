@@ -1,4 +1,5 @@
 ---
+description: "getDateTimeOffset(java.lang.string) (SQLServerResultSet)"
 title: "getDateTimeOffset(java.lang.string) (SQLServerResultSet) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e585927c-0dee-43fd-b71e-c9f1701790bd
 author: David-Engel
 ms.author: v-daenge

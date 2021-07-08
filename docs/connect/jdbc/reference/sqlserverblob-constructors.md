@@ -1,4 +1,5 @@
 ---
+description: "SQLServerBlob Constructors"
 title: "SQLServerBlob Constructors | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 77c1378c-d68b-4ff7-90bf-2582f44e6a1e
 author: David-Engel
 ms.author: v-daenge

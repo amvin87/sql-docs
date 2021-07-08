@@ -1,4 +1,5 @@
 ---
+description: "SQLSetPos Function"
 title: "SQLSetPos Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "07/18/2019"
@@ -6,12 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLSetPos"
 apilocation: 
   - "sqlsrv32.dll"
   - "odbc32.dll"
+  - "Msodbcsql11.dll"
+  - "Sqlncli10.dll"
+  - "Sqlncli11.dll"
+  - "Sqlncli11e.dll"
 apitype: "dllExport"
 f1_keywords: 
   - "SQLSetPos"
@@ -65,7 +70,7 @@ SQLRETURN SQLSetPos(
   
  For more information, see "Comments."  
   
- **Returns**  
+## Returns  
   
  SQL_SUCCESS, SQL_SUCCESS_WITH_INFO, SQL_NEED_DATA, SQL_STILL_EXECUTING, SQL_ERROR, or SQL_INVALID_HANDLE.  
   

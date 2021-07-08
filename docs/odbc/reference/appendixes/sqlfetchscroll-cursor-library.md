@@ -1,4 +1,5 @@
 ---
+description: "SQLFetchScroll (Cursor Library)"
 title: "SQLFetchScroll (Cursor Library) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "SQLFetchScroll function [ODBC], Cursor Library"
 ms.assetid: 4417e57c-31dd-475e-8fe9-eab00a459c80

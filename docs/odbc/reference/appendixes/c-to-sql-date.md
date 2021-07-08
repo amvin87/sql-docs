@@ -1,4 +1,5 @@
 ---
+description: "C to SQL: Date"
 title: "C to SQL: Date | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "date data type [ODBC]"
   - "converting data from c to SQL types [ODBC], date"

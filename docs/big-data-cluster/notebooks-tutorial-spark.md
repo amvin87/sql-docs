@@ -1,7 +1,7 @@
 ---
 title: Run a sample notebook using Spark
 titleSuffix: SQL Server big data clusters
-description: This tutorial shows how you can load an run a sample Spark notebook on a [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ver15.md)].
+description: This tutorial shows how you can load an run a sample Spark notebook on a SQL Server 2019 big data cluster.
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: mihaelab
@@ -13,7 +13,7 @@ ms.technology: big-data-cluster
 
 # Run a sample notebook using Spark
 
-[!INCLUDE[tsql-appliesto-ssver15-xxxx-xxxx-xxx](../includes/tsql-appliesto-ssver15-xxxx-xxxx-xxx.md)]
+[!INCLUDE[SQL Server 2019](../includes/applies-to-version/sqlserver2019.md)]
 
 This tutorial demonstrates how to load and run a notebook in Azure Data Studio on a [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ver15.md)]. This allows data scientists and data engineers to run Python, R, or Scala code against the cluster.
 
@@ -39,7 +39,7 @@ Use the following instructions to load the sample notebook file **spark-sql.ipyn
 1. Run the following **curl** command to download the notebook file from GitHub:
 
    ```bash
-   curl 'https://raw.githubusercontent.com/Microsoft/sql-server-samples/master/samples/features/sql-big-data-cluster/spark/data-loading/transform-csv-files.ipynb' -o transform-csv-files.ipynb
+   curl https://raw.githubusercontent.com/Microsoft/sql-server-samples/master/samples/features/sql-big-data-cluster/spark/data-loading/transform-csv-files.ipynb -o transform-csv-files.ipynb
    ```
 
 ## Open the notebook
@@ -64,11 +64,11 @@ You can run each notebook cell by pressing the play button to the left of the ce
 
 Run each of the cells in the sample notebook in succession. For more information about using notebooks with [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)], see the following resources:
 
-- [How to use notebooks](../azure-data-studio/notebooks-guidance.md)
+- [How to use notebooks](../azure-data-studio/notebooks/notebooks-guidance.md)
 - [How to manage notebooks in Azure Data Studio](notebooks-manage-bdc.md)
 
 ## Next steps
 
 Learn more about notebooks:
 > [!div class="nextstepaction"]
-> [How to use notebooks](../azure-data-studio/notebooks-guidance.md)
+> [How to use notebooks](../azure-data-studio/notebooks/notebooks-guidance.md)

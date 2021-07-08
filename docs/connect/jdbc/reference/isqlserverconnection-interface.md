@@ -1,4 +1,5 @@
 ---
+description: "ISQLServerConnection Interface"
 title: "ISQLServerConnection Interface | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 031c01e2-2c65-4fe4-9700-fdbcc7a39f30
 author: David-Engel
 ms.author: v-daenge

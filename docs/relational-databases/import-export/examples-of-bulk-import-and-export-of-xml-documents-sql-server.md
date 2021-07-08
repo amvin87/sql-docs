@@ -1,7 +1,6 @@
 ---
 title: "Bulk import & export of XML documents"
-description: These examples show bulk import of XML documents into a SQL Server database and bulk export from a SQL Server database.
-ms.description: "Examples of bulk importing and exporting of XML documents with SQL Server"
+description: "Examples of bulk importing and exporting of XML documents with SQL Server"
 ms.date: "10/24/2016"
 ms.prod: sql
 ms.prod_service: "database-engine"
@@ -17,30 +16,31 @@ helpviewer_keywords:
   - "bulk exporting [SQL Server], data formats"
   - "XML bulk load [SQL Server]"
 ms.assetid: dff99404-a002-48ee-910e-f37f013d946d
-author: MashaMSFT
-ms.author: mathoma
+author: cawrites
+ms.author: chadam
 ms.custom: "seo-lt-2019"
 ---
 # Examples of bulk import and export of XML documents (SQL Server)
-[!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
 
-    
-##  <a name="top"></a>
- You can bulk import XML documents into a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] database or bulk export them from a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] database. This topic provides examples of both.  
+[!INCLUDE [sqlserver2016-asdb-asdbmi](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi.md)]
+
+## <a name="top"></a>
+
+You can bulk import XML documents into a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] database or bulk export them from a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] database. This topic provides examples of both.
+
+To bulk import data from a data file into a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] table or non-partitioned view, you can use the following:  
   
- To bulk import data from a data file into a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] table or non-partitioned view, you can use the following:  
+- **bcp** utility  
+   You can also use the **bcp** utility to export data from anywhere in a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] database that a SELECT statement works, including partitioned views.  
+
+- BULK INSERT  
   
--   **bcp** utility  
-    You can also use the **bcp** utility to export data from anywhere in a [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] database that a SELECT statement works, including partitioned views.  
-  
--   BULK INSERT  
-  
--   INSERT ... SELECT * FROM OPENROWSET(BULK...)  
+- INSERT ... SELECT * FROM OPENROWSET(BULK...)  
 
 For more information, see the following topics.
 - [Import and Export Bulk Data by Using the bcp Utility (SQL Server).](../../relational-databases/import-export/import-and-export-bulk-data-by-using-the-bcp-utility-sql-server.md)
 - [Import Bulk Data by Using BULK INSERT or OPENROWSET (BULK...)(SQL Server).](../../relational-databases/import-export/import-bulk-data-by-using-bulk-insert-or-openrowset-bulk-sql-server.md) 
-- [How to import XML into SQL Server with the XML Bulk Load component.](https://support.microsoft.com/kb/316005)
+- [How to import XML into SQL Server with the XML Bulk Load component.](https://mskb.pkisolutions.com/kb/316005)
 - [XML Schema Collections (SQL Server)](../xml/xml-schema-collections-sql-server.md)
   
 ## Examples  

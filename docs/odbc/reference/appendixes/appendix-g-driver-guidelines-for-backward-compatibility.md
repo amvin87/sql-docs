@@ -1,4 +1,5 @@
 ---
+description: "Appendix G: Driver Guidelines for Backward Compatibility"
 title: "Appendix G: Driver Guidelines for Backward Compatibility | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "ODBC drivers [ODBC], backward compatibility"
   - "backward compatibility [ODBC], drivers"

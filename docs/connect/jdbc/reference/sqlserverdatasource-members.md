@@ -1,4 +1,5 @@
 ---
+description: "SQLServerDataSource Members"
 title: "SQLServerDataSource Members | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2018"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 7e749bc5-d765-4864-be2b-7822d4c20c09
 author: David-Engel
 ms.author: v-daenge

@@ -1,4 +1,5 @@
 ---
+description: "SQL to C Data Conversion Examples"
 title: "SQL to C Data Conversion Examples | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2019"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "data conversions from SQL to C types [ODBC], examples"
   - "converting data from SQL to C types [ODBC], examples"

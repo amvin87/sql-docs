@@ -1,4 +1,5 @@
 ---
+description: "setClob Method (java.lang.String, java.io.Reader)"
 title: "setClob Method (java.lang.String, java.io.Reader) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: f7457b8a-df31-4999-883e-8cc386a48ceb
 author: David-Engel
 ms.author: v-daenge

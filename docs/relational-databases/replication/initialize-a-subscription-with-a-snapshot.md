@@ -1,5 +1,6 @@
 ---
-title: Initialize a Subscription with a Snapshot | Microsoft Docs
+description: "Initialize a Subscription with a Snapshot for a New Publication"
+title: Initialize subscription with snapshot
 ms.custom:
 ms.date: 03/23/2020
 ms.prod: sql
@@ -12,11 +13,11 @@ helpviewer_keywords:
 ms.assetid: 77a9ade2-cdc0-4ae9-a02d-6e29d7c2ada0
 author: MashaMSFT
 ms.author: mathoma
-monikerRange: "= azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions"
+monikerRange: "= azuresqldb-mi-current || >= sql-server-2016"
 ---
-# Initialize a Subscription with a Snapshot
+# Initialize a Subscription with a Snapshot for a New Publication
 
-[!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]
+[!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
 This article describes the processes that occur when a replication publication is initialized. An initial snapshot is applied to the Subscribers.
 

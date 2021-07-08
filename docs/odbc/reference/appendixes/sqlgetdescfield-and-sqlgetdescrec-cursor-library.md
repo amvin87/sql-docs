@@ -1,4 +1,5 @@
 ---
+description: "SQLGetDescField and SQLGetDescRec (Cursor Library)"
 title: "SQLGetDescField and SQLGetDescRec (Cursor Library) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "SQLGetDescField function [ODBC], Cursor Library"
   - "SQLGetDescRec function [ODBC], Cursor Library"

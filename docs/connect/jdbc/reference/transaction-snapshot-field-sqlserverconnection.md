@@ -1,4 +1,5 @@
 ---
+description: "TRANSACTION_SNAPSHOT Field (SQLServerConnection)"
 title: "TRANSACTION_SNAPSHOT Field (SQLServerConnection) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerConnection.TRANSACTION_SNAPSHOT"
 apilocation: 

@@ -1,4 +1,5 @@
 ---
+description: "Validation Statuses (Master Data Services)"
 title: Validation Statuses
 ms.custom: ""
 ms.date: "03/01/2017"
@@ -8,12 +9,12 @@ ms.reviewer: ""
 ms.technology: master-data-services
 ms.topic: conceptual
 ms.assetid: fc829d25-b3e8-4801-8a94-4df19a7a5971
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Validation Statuses (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   In the **Version Management** functional area, on the **Validate Version** page, the following statuses are possible.  
   

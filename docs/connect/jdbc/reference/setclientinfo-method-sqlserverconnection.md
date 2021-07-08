@@ -1,4 +1,5 @@
 ---
+description: "setClientInfo Method (SQLServerConnection)"
 title: "setClientInfo Method (SQLServerConnection) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 9eaafb0e-8bfa-456c-a481-8e06e5d539e1
 author: David-Engel
 ms.author: v-daenge

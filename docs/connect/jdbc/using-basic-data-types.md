@@ -2,7 +2,7 @@
 title: "Using basic JDBC data types"
 description: "The Microsoft JDBC Driver for SQL Server uses basic JDBC data types to convert SQL Server data types to a format that can be understood by Java."
 ms.custom: ""
-ms.date: "08/12/2019"
+ms.date: "01/29/2021"
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
@@ -29,9 +29,9 @@ The following table lists the default mappings between the basic [!INCLUDE[ssNoV
 | bit                | BIT                                                | boolean                      |
 | char               | CHAR                                               | String                       |
 | date               | DATE                                               | java.sql.Date                |
-| datetime           | TIMESTAMP                                          | java.sql.Timestamp           |
+| datetime<sup>3</sup>          | TIMESTAMP                               | java.sql.Timestamp           |
 | datetime2          | TIMESTAMP                                          | java.sql.Timestamp           |
-| datetimeoffset (2) | microsoft.sql.Types.DATETIMEOFFSET                 | microsoft.sql.DateTimeOffset |
+| datetimeoffset<sup>2</sup> | microsoft.sql.Types.DATETIMEOFFSET         | microsoft.sql.DateTimeOffset |
 | decimal            | DECIMAL                                            | java.math.BigDecimal         |
 | float              | DOUBLE                                             | double                       |
 | image              | LONGVARBINARY                                      | byte[]                       |
@@ -47,7 +47,7 @@ The following table lists the default mappings between the basic [!INCLUDE[ssNoV
 | smallint           | SMALLINT                                           | short                        |
 | smallmoney         | DECIMAL                                            | java.math.BigDecimal         |
 | text               | LONGVARCHAR                                        | String                       |
-| time               | TIME (1)                                           | java.sql.Time (1)            |
+| time               | TIME<sup>1</sup>                                   | java.sql.Time<sup>1</sup>            |
 | timestamp          | BINARY                                             | byte[]                       |
 | tinyint            | TINYINT                                            | short                        |
 | udt                | VARBINARY                                          | byte[]                       |
@@ -57,13 +57,15 @@ The following table lists the default mappings between the basic [!INCLUDE[ssNoV
 | varchar            | VARCHAR                                            | String                       |
 | varchar(max)       | VARCHAR                                            | String                       |
 | xml                | LONGVARCHAR<br /><br /> LONGNVARCHAR (Java SE 6.0) | String<br /><br /> SQLXML    |
-| sqlvariant         | SQLVARIANT                                         | Object                       |
+| sqlvariant         | microsoft.sql.Types.SQL_VARIANT                    | Object                       |
 | geometry           | VARBINARY                                          | byte[]                       |
 | geography          | VARBINARY                                          | byte[]                       |
   
-(1) To use java.sql.Time with the time [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type, you must set the **sendTimeAsDatetime** connection property to false.  
+<sup>1</sup> To use java.sql.Time with the time [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type, you must set the **sendTimeAsDatetime** connection property to false.  
   
-(2) You can programmatically access values of **datetimeoffset** with [DateTimeOffset Class](reference/datetimeoffset-class.md).  
+<sup>2</sup> You can programmatically access values of **datetimeoffset** with [DateTimeOffset Class](reference/datetimeoffset-class.md).  
+  
+<sup>3</sup> Note that java.sql.Timestamp values can no longer be used to compare values from a datetime column starting from SQL Server 2016. This limitation is due to a server-side change that converts datetime to datetime2 differently, resulting in non-equitable values. The workaround to this issue is to either change datetime columns to datetime2(3), use String instead of java.sql.Timestamp, or change database compatibility level to 120 or below.
   
 The following sections provide examples of how you can use the JDBC Driver and the basic data types. For a more detailed example of how to use the basic data types in a Java application, see [Basic Data Types Sample](basic-data-types-sample.md).  
   
@@ -95,20 +97,20 @@ If you have to update the value of a field in a data source, use one of the upda
 
 If you have to update data in a data source by using a parameterized query, you can set the data type of the parameters by using one of the set\<Type> methods of the [SQLServerPreparedStatement](reference/sqlserverpreparedstatement-class.md) class, also known as the *setter methods*. In the following example, the [prepareStatement](reference/preparestatement-method-sqlserverconnection.md) method is used to pre-compile the parameterized query, and then the [setString](reference/setstring-method-sqlserverpreparedstatement.md) method is used to set the string value of the parameter before the [executeUpdate](reference/executeupdate-method.md) method is called.  
   
-[!code[JDBC#UsingBasicDataTypes4](../../connect/jdbc/codesnippet/Java/using-basic-data-types_4.java)]  
+[!code[JDBC#UsingBasicDataTypes4](codesnippet/Java/using-basic-data-types_4.java)]  
   
-For more information about parameterized queries, see [Using an SQL statement with parameters](../../connect/jdbc/using-an-sql-statement-with-parameters.md).  
+For more information about parameterized queries, see [Using an SQL statement with parameters](using-an-sql-statement-with-parameters.md).  
 
 ## Passing parameters to a stored procedure
 
 If you have to pass typed parameters into a stored procedure, you can set the parameters by index or name by using one of the set\<Type> methods of the [SQLServerCallableStatement](../../connect/jdbc/reference/sqlservercallablestatement-class.md) class. In the following example, the [prepareCall](../../connect/jdbc/reference/preparecall-method-sqlserverconnection.md) method is used to set up the call to the stored procedure, and then the [setString](../../connect/jdbc/reference/setstring-method-sqlservercallablestatement.md) method is used to set the parameter for the call before the [executeQuery](../../connect/jdbc/reference/executequery-method-sqlserverstatement.md) method is called.  
   
-[!code[JDBC#UsingBasicDataTypes5](../../connect/jdbc/codesnippet/Java/using-basic-data-types_5.java)]  
+[!code[JDBC#UsingBasicDataTypes5](codesnippet/Java/using-basic-data-types_5.java)]  
   
 > [!NOTE]  
 > In this example, a result set is returned with the results of running the stored procedure.
 
-For more information about using the JDBC driver with stored procedures and input parameters, see [Using a stored procedure with input parameters](../../connect/jdbc/using-a-stored-procedure-with-input-parameters.md).  
+For more information about using the JDBC driver with stored procedures and input parameters, see [Using a stored procedure with input parameters](using-a-stored-procedure-with-input-parameters.md).  
 
 ## Retrieving parameters from a stored procedure
 

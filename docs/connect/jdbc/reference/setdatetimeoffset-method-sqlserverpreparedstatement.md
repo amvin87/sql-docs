@@ -1,4 +1,5 @@
 ---
+description: "setDateTimeOffset Method (SQLServerPreparedStatement)"
 title: "setDateTimeOffset Method (SQLServerPreparedStatement) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 5014dba9-1755-4769-b070-6cbeecee864e
 author: David-Engel
 ms.author: v-daenge

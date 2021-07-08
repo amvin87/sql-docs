@@ -1,4 +1,5 @@
 ---
+description: "Collection Permissions (Master Data Services)"
 title: Collection Permissions
 ms.custom: ""
 ms.date: "03/01/2017"
@@ -11,12 +12,12 @@ helpviewer_keywords:
   - "collections [Master Data Services], permissions"
   - "permissions [Master Data Services], collections"
 ms.assetid: 703e1bf5-4b4b-4830-8a5b-f979b09f677d
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Collection Permissions (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   Collection permissions apply to all collections for an entity. You cannot give permission to a specific collection; permissions apply to all collections.  
   

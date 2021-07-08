@@ -1,4 +1,5 @@
 ---
+description: "Migrate to a Partially Contained Database"
 title: "Migrate to a Partially Contained Database | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/14/2017"
@@ -10,11 +11,11 @@ ms.topic: conceptual
 helpviewer_keywords: 
   - "contained database, migrating to"
 ms.assetid: 90faac38-f79e-496d-b589-e8b2fe01c562
-author: "stevestein"
-ms.author: "sstein"
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 ---
 # Migrate to a Partially Contained Database
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+ [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
   This topic discusses how to prepare to change to the partially contained database model and then provides the migration steps.  
   
  **In this topic:**  

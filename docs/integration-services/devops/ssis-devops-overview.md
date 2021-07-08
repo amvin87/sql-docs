@@ -1,7 +1,7 @@
 ---
 title: "SQL Server Integration Services DevOps overview | Microsoft Docs"
 description: Learn how to build SSIS CICD with SSIS DevOps Tools.
-ms.date: "12/06/2019"
+ms.date: "4/21/2021"
 ms.topic: conceptual
 ms.prod: sql
 ms.prod_service: "integration-services"
@@ -10,13 +10,13 @@ ms.technology: integration-services
 author: chugugrace
 ms.author: chugu
 ---
-# SQL Server Integration Services (SSIS) DevOps Tools (Preview)
+# SQL Server Integration Services (SSIS) DevOps Tools Azure DevOps extension
 
 [SSIS DevOps Tools](https://marketplace.visualstudio.com/items?itemName=SSIS.ssis-devops-tools) extension is available in **Azure DevOps** Marketplace.
 
-If you do not have an **Azure DevOps** organization, firstly sign up for [Azure Pipelines](https://docs.microsoft.com/azure/devops/pipelines/get-started/pipelines-sign-up?view=azure-devops), then add **SSIS DevOps Tools** extension following [the steps](https://docs.microsoft.com/azure/devops/marketplace/overview?view=azure-devops&tabs=browser#add-an-extension).
+If you do not have an **Azure DevOps** organization, firstly sign up for [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-sign-up?view=azure-devops&preserve-view=true), then add **SSIS DevOps Tools** extension following [the steps](/azure/devops/marketplace/overview?tabs=browser&view=azure-devops&preserve-view=true#add-an-extension).
 
-**SSIS DevOps Tools** includes **SSIS Build** task, **SSIS Deploy** release task, and **SSIS Catalog Configuration task**..
+**SSIS DevOps Tools** includes **SSIS Build** task, **SSIS Deploy** release task, and **SSIS Catalog Configuration task**.
 
 - **[SSIS Build](#ssis-build-task)** task supports building dtproj files in project deployment model or package deployment model.
 
@@ -52,13 +52,13 @@ Name of the project configuration to be used for build. If not supplied, it defa
 
 #### Output path
 
-Path of a separate folder to save build results, which can be published as build artifact via [publish build artifacts task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops).
+Path of a separate folder to save build results, which can be published as build artifact via [publish build artifacts task](/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops&preserve-view=true).
 
 ### Limitations and known issues
 
 - SSIS Build task relies on Visual Studio and SSIS designer, which is mandatory on build agents. Thus, to run SSIS Build task in the pipeline, you must choose **vs2017-win2016** for Microsoft-hosted agents, or install Visual Studio and SSIS designer (either VS2017 + SSDT2017, or VS2019 + SSIS Projects extension) on self-hosted agents.
 
-- To build SSIS projects using any out-of-box components (including SSIS Azure feature pack, and other third-party components), those out-of-box components must be installed on the machine where the pipeline agent is running.  For Microsoft-hosted agent, user can add a [PowerShell Script task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/powershell?view=azure-devops) or [Command Line Script task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/command-line?view=azure-devops) to download and install the components before SSIS Build task  is executed. Below is the sample PowerShell script to install Azure Feature Pack: 
+- To build SSIS projects using any out-of-box components (including SSIS Azure feature pack, and other third-party components), those out-of-box components must be installed on the machine where the pipeline agent is running.  For Microsoft-hosted agent, user can add a [PowerShell Script task](/azure/devops/pipelines/tasks/utility/powershell?view=azure-devops&preserve-view=true) or [Command Line Script task](/azure/devops/pipelines/tasks/utility/command-line?view=azure-devops&preserve-view=true) to download and install the components before SSIS Build task  is executed. Below is the sample PowerShell script to install Azure Feature Pack: 
 
 ```powershell
 wget -Uri https://download.microsoft.com/download/E/E/0/EE0CB6A0-4105-466D-A7CA-5E39FA9AB128/SsisAzureFeaturePack_2017_x86.msi -OutFile AFP.msi
@@ -68,7 +68,27 @@ start -Wait -FilePath msiexec -Args "/i AFP.msi /quiet /l* log.txt"
 cat log.txt
 ```
 
-- Protection level **EncryptSensitiveWithPassword** and **EncryptAllWithPassword** are not supported in SSIS Build task. Make sure all SSIS projects in codebase are not using these two protection levels, or SSIS Build task will hang and time out during execution.
+- Protection level **EncryptSensitiveWithPassword** and **EncryptAllWithPassword** are not supported in SSIS Build task. Make sure all SSIS projects in codebase are not using these two protection levels, or SSIS Build task will stop responding and time out during execution.
+
+## SSIS Build task version 1.* (Preview)
+
+Enhancements in version 1.*:
+
+- Remove the dependency on Visual Studio and SSIS designer. Build task can run on Microsoft-hosted agent or self-hosted agent with Windows OS and .NET framework 4.6.2 or higher.
+
+- No need of installing out-of-box components.
+
+- Support protection level EncryptionWithPassword and EncryptionAllWithPassword.
+
+### Version 1.* only properties
+
+#### Project Password
+
+Password of the SSIS project and its packages. This argument is only valid when the protection level of the SSIS project and packages is EncryptSensitiveWithPassword or EncryptAllWithPassword. For package deployment model, all packages must share the same password specified by this argument.
+
+#### Strip Sensitive Data
+
+Convert the protection level of the SSIS project to DontSaveSensitve if this value is true. When protection level is EncryptSensitiveWithPassword or EncryptAllWithPassword, the argument Project Password must be correctly set. This option is only valid for project deployment model.
 
 ## SSIS Deploy task
 
@@ -89,7 +109,7 @@ Type of the destination. Currently SSIS Deploy task supports two types:
 
 #### Destination server
 
-Name of destination SQL server. It can be the name of an on-premises SQL Server, Azure SQL Database, or Azure SQL Database managed instance. This property is only visible when destination type is SSISDB.
+Name of destination SQL server. It can be the name of an on-premises SQL Server, Azure SQL Database, or Azure SQL Managed Instance. This property is only visible when destination type is SSISDB.
 
 #### Destination path
 
@@ -111,7 +131,7 @@ Authentication type to access the specified destination server. This property is
 
 But whether a specific authentication type is supported depends on destination server type and agent type. Detail support matrix is listed in below table.
 
-| |Microsoft-hosted agent|Self-hosted agent|
+|Destination server type|Microsoft-hosted agent|Self-hosted agent|
 |---------|---------|---------|
 |SQL server on-premises or VM |N/A|Windows Authentication|
 |Azure SQL|SQL Server Authentication <br> Active Directory - Password|SQL Server Authentication <br> Active Directory - Password <br> Active Directory - Integrated|
@@ -137,7 +157,7 @@ Specify whether overwrite the existing projects or SSISDeploymentManifest files 
 
 #### Continue deployment when error occurs
 
-Specify whether tp continue deployment for remaining projects or files when an error occurs. If 'No', SSIS Deploy task will stop immediately when error occurs.
+Specify whether to continue deployment for remaining projects or files when an error occurs. If 'No', SSIS Deploy task will stop immediately when error occurs.
 
 ### Limitations and known issues
 
@@ -146,6 +166,18 @@ SSIS Deploy Task doesn't support the following scenarios currently:
 - Configure environment in SSIS catalog.
 - Deploy ispac to Azure SQL Server or Azure SQL Managed Instance, which only allows multi-factor authentication (MFA).
 - Deploy packages to MSDB or SSIS Package Store.
+
+## SSIS Deploy task version 1.* (Preview)
+
+Enhancements in version 1.*:
+
+- Support protection level EncryptionWithPassword and EncryptionAllWithPassword.
+
+### Version 1.* only properties
+
+#### Project Password
+
+Password to decrypt the ISPAC or DTSX files. This argument is only valid when the protection level is EncryptSensitiveWithPassword or EncryptAllWithPassword.
 
 ## SSIS Catalog Configuration task
 
@@ -166,7 +198,7 @@ Refer to details on how to [define configuration JSON](#define-configuration-jso
 
 Path of the SSIS catalog configuration JSON file. This property is only visible when selecting "File path" as configuration file source.
 
-To use [pipeline variables](/azure/devops/pipelines/process/variables) in configuration JSON file, you need to add a [File Transform task](https://docs.microsoft.com/azure/devops/pipelines/tasks/utility/file-transform?view=azure-devops) before this task to substitute configuration values with pipeline variables. For more information, see [JSON variable substitution](https://docs.microsoft.com/azure/devops/pipelines/tasks/transforms-variable-substitution?view=azure-devops&tabs=Classic#json-variable-substitution).
+To use [pipeline variables](/azure/devops/pipelines/process/variables) in configuration JSON file, you need to add a [File Transform task](/azure/devops/pipelines/tasks/utility/file-transform?view=azure-devops&preserve-view=true) before this task to substitute configuration values with pipeline variables. For more information, see [JSON variable substitution](/azure/devops/pipelines/tasks/transforms-variable-substitution?tabs=Classic&view=azure-devops&preserve-view=true#json-variable-substitution).
 
 #### Inline configuration JSON
 
@@ -178,7 +210,7 @@ Whether to roll back the configuration made by this task when error occurs.
 
 #### Target server
 
-Name of target SQL server. It can be the name of an on-premises SQL Server, Azure SQL Database, or Azure SQL Database managed instance.
+Name of target SQL server. It can be the name of an on-premises SQL Server, Azure SQL Database, or Azure SQL Managed Instance.
 
 #### Authentication type
 
@@ -191,7 +223,7 @@ Authentication type to access the specified target server. In general below auth
 
 But whether a specific authentication type is supported depends on destination server type and agent type. Detail support matrix is listed in below table.
 
-| |Microsoft-hosted agent|Self-hosted agent|
+|Destination server type|Microsoft-hosted agent|Self-hosted agent|
 |---------|---------|---------|
 |SQL server on-premises or VM |N/A|Windows Authentication|
 |Azure SQL|SQL Server Authentication <br> Active Directory - Password|SQL Server Authentication <br> Active Directory - Password <br> Active Directory - Integrated|
@@ -307,9 +339,9 @@ The configuration JSON schema has three layers:
 
 |Property  |Description  |Notes  |
 |---------|---------|---------|
-|name|Name of the parameter.|The parameter can be *project parameter* or *package parameter*. <br> The parameter will be skipped if it does not exist in the parent project.|
-|container|Container of the parameter.|<li>If the parameter is a project parameter, the *container* should be the project name. <li>If it's a package parameter, the *container* should be the package name with **.dtsx** extension. <li> If the parameter is a connection manager property, the name should be in such format: **CM.\<Connection Manager Name>.\<Property Name>**.|
-|value|Value of the parameter.|<li>When *valueType* is *referenced*: The value is a reference to an environment variable in  *string* type. <li> When *valueType* is *literal*: This attribute supports any valid *boolean*, *number*, and *string* JSON values. <br> The value will be converted to the target parameter type. Error will occur if it cannot be converted.<li> The value of *null* is invalid. The task will skip this parameter object, and give a warning.|
+|name|Name of the parameter.|<li>The parameter can be a project parameter or a package parameter. <li>The parameter is skipped if it doesn't exist. <li>If the parameter is a connection manager property, the name should be in the format **CM.\<Connection Manager Name>.\<Property Name>**. |
+|container|Container of the parameter.|<li>If the parameter is a project parameter, the *container* should be the project name. <li>If it's a package parameter, the *container* should be the package name with **.dtsx** extension.|
+|value|Value of the parameter.|<li>When *valueType* is *referenced*: The value is a reference to an environment variable in  *string* type. <li> When *valueType* is *literal*: This attribute supports any valid *boolean*, *number*, and *string* JSON values. <li> The value will be converted to the target parameter type. Error will occur if it cannot be converted.<li> The value of *null* is invalid. The task will skip this parameter object, and give a warning.|
 |valueType|Type of the parameter value.|Valid types are: <br> *literal*: The *value* attribute represents a literal value. <br> *referenced*: The *value* attribute represents a reference to an environment variable.|
 
 ##### Reference Attributes
@@ -338,6 +370,50 @@ The configuration JSON schema has three layers:
 |sensitive|Whether the value of the environment variable is sensitive.|Valid inputs are: <br> *true* <br> *false*|
 
 ## Release notes
+    
+### Version 1.0.5
+
+Release Date: June 2, 2021
+
+- Fixed an issue that sometimes SSIS Build Task of version 1.\* failed to build projects/packages with protection level EncryptSensitiveWithPassword or EncryptAllWithPassword with the error "Specified initialization vector (IV) does not match the block size for this algorithm."
+- Removed the JSON content in the log of the SSIS Catalog Configuration task when "Configuration file source" is "File Path".
+
+### Version 1.0.4
+
+Release Date: April 21, 2021
+
+- SSIS Build task version 1.* (Preview)
+    - Remove the dependency on Visual Studio and SSIS designer. Build task can run on Microsoft-hosted agent or self-hosted agent with Windows OS and .NET framework 4.6.2 or higher.
+    - No need of installing out-of-box components.
+    - Support protection level EncryptionWithPassword and EncryptionAllWithPassword.
+- SSIS Deploy task version 1.* (Preview)
+    - Support protection level EncryptionWithPassword and EncryptionAllWithPassword.
+
+### Version 1.0.3
+
+Release Date: October 21, 2020
+
+- Allow specifying connection string suffix for SSIS Deploy task and SSIS Catalog Configuration task.
+
+### Version 1.0.2
+
+Release Date: May 26, 2020
+
+- Fixed an issue that SSIS Catalog Configuration task may fail in some case after configuration work is done.
+
+### Version 1.0.1
+
+Release Date: May 9, 2020
+
+- Fixed an issue that SSIS Build task always build the whole solution even if only single dtproj file is specified as project path.
+
+### Version 1.0.0
+
+Release Date: May 8, 2020
+
+- General Availability (GA) release.
+- Added a restriction of minimum .NET framework version on agent. Currently the minimum .NET framework version is 4.6.2.
+- Refined description of SSIS Build task and SSIS Deploy task.
 
 ### Version 0.2.0 Preview
 

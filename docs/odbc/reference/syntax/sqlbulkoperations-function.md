@@ -1,4 +1,5 @@
 ---
+description: "SQLBulkOperations Function"
 title: "SQLBulkOperations Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "07/18/2019"
@@ -6,12 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLBulkOperations"
 apilocation: 
   - "sqlsrv32.dll"
   - "odbc32.dll"
+  - "Msodbcsql11.dll"
+  - "Sqlncli10.dll"
+  - "Sqlncli11.dll"
+  - "Sqlncli11e.dll"
 apitype: "dllExport"
 f1_keywords: 
   - "SQLBulkOperations"

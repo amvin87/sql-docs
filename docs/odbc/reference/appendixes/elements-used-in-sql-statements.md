@@ -1,4 +1,5 @@
 ---
+description: "Elements Used in SQL Statements"
 title: "Elements Used in SQL Statements | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "SQL statements [ODBC], elements supported"
   - "minimum SQL syntax supported [ODBC]"

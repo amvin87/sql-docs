@@ -1,4 +1,5 @@
 ---
+description: "getNCharacterStream Method (int)"
 title: "getNCharacterStream Method (int) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 6ae704f5-823c-4dfe-8c08-07b547c61a3c
 author: David-Engel
 ms.author: v-daenge

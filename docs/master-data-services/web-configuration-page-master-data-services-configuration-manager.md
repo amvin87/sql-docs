@@ -1,4 +1,5 @@
 ---
+description: "Web Configuration Page (Master Data Services Configuration Manager)"
 title: Web Configuration Page
 ms.custom: ""
 ms.date: "03/20/2017"
@@ -10,12 +11,12 @@ ms.topic: conceptual
 f1_keywords: 
   - "sql13.mds.configmanager.webconfigpg.f1"
 ms.assetid: 7b900778-0169-4e42-9faf-98dc1c01313e
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Web Configuration Page (Master Data Services Configuration Manager)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   Use the **Web Configuration** page to configure a website and web application. You can also enable Data Quality Services.  
   

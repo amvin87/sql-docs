@@ -1,4 +1,5 @@
 ---
+description: "Appendix F: ODBC Cursor Library"
 title: "Appendix F: ODBC Cursor Library | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "ODBC cursor library [ODBC], about cursor library"
   - "ODBC cursor library [ODBC]"

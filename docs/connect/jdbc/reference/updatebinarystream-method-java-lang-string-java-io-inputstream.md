@@ -1,4 +1,5 @@
 ---
+description: "updateBinaryStream Method (java.lang.String, java.io.InputStream)"
 title: "updateBinaryStream Method (java.io.InputStream) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 56883144-26a0-4f45-ad36-4f616369af3e
 author: David-Engel
 ms.author: v-daenge

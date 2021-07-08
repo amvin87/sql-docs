@@ -1,4 +1,5 @@
 ---
+description: "Supported Versions of FoxPro"
 title: "Supported Versions of FoxPro | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -32,4 +33,4 @@ You can use the Microsoft® Visual FoxPro® ODBC Driver to access data stored in
   
  For more information about how to connect to a data source, see [Adding a Visual FoxPro Data Source](../../odbc/microsoft/adding-a-visual-foxpro-data-source.md).  
   
- To download the driver, see [the Visual FoxPro ODBC Driver download site](https://go.microsoft.com/fwlink/?LinkId=121318).
+ To download the driver, see [the Visual FoxPro ODBC Driver download site](/previous-versions/visualstudio/foxpro/mt490121(v=msdn.10)).

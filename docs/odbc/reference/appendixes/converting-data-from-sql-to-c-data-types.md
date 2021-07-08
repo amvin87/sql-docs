@@ -1,4 +1,5 @@
 ---
+description: "Converting Data from SQL to C Data Types"
 title: "Converting Data from SQL to C Data Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "data conversions from SQL to C types [ODBC]"
   - "data conversions from SQL to C types [ODBC], about converting"

@@ -1,4 +1,5 @@
 ---
+description: "setBinaryStream Method (int, java.io.InputStream, long)"
 title: "setBinaryStream Method (int, java.io.InputStream, long) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 4ab2e2f3-eaf0-471a-8422-2cf98ce979cf
 author: David-Engel
 ms.author: v-daenge

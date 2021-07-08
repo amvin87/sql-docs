@@ -1,4 +1,5 @@
 ---
+description: "setTime Method (java.lang.String, java.sql.Time)"
 title: "setTime Method to time value | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerCallableStatement.setTime (java.lang.String, java.lang.Time)"
 apilocation: 

@@ -1,4 +1,5 @@
 ---
+description: "Translation DLL Function Summary"
 title: "Translation DLL Function Summary | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "translation DLLs [ODBC]"
   - "functions [ODBC], translation DLL functions"

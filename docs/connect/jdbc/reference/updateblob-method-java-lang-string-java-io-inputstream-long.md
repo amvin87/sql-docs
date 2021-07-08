@@ -1,4 +1,5 @@
 ---
+description: "updateBlob Method (java.lang.String, java.io.InputStream, long)"
 title: "updateBlob Method (java.lang.String, java.io.InputStream, long) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40f75549-5d5a-4de3-a271-4b8f0dd7b124
 author: David-Engel
 ms.author: v-daenge

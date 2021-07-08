@@ -1,4 +1,5 @@
 ---
+description: "Delete a Model (Master Data Services)"
 title: Delete a Model
 ms.custom: ""
 ms.date: "03/01/2017"
@@ -11,12 +12,12 @@ helpviewer_keywords:
   - "deleting models [Master Data Services]"
   - "models [Master Data Services], deleting models"
 ms.assetid: f0ad3cc4-aed7-47c8-94bc-2971fe9fe871
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Delete a Model (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   Delete a model to remove the model and all of its data from [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)].  
   

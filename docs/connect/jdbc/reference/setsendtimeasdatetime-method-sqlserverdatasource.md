@@ -1,4 +1,5 @@
 ---
+description: "setSendTimeAsDatetime Method (SQLServerDataSource)"
 title: "setSendTimeAsDatetime Method (SQLServerDataSource) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 705a0494-b5e2-43db-940a-1b8cec550cdb
 author: David-Engel
 ms.author: v-daenge

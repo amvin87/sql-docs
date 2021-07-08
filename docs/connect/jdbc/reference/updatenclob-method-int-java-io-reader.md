@@ -1,4 +1,5 @@
 ---
+description: "updateNClob Method (int, java.io.Reader)"
 title: "updateNClob Method (int, java.io.Reader) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 17adafd4-3ac3-4ff0-af9d-f087cc5ef936
 author: David-Engel
 ms.author: v-daenge

@@ -1,4 +1,5 @@
 ---
+description: "SQLServerClob Members"
 title: "SQLServerClob Members | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apitype: "Assembly"
 ms.assetid: 7db785ca-edd5-4833-8053-17fdbf87279a
 author: David-Engel

@@ -1,4 +1,5 @@
 ---
+description: "updateNString Method (SQLServerResultSet)"
 title: "updateNString Method (SQLServerResultSet) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 0b6b65a1-8e62-4cd5-ab28-6231c3e20d81
 author: David-Engel
 ms.author: v-daenge

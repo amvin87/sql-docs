@@ -1,4 +1,5 @@
 ---
+description: "getDate Method (java.lang.String, java.util.Calendar) (SQLServerResultSet)"
 title: "getDate Method (java.util.Calendar) column | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerResultSet.getDate (java.lang.String, java.util.Calendar)"
 apilocation: 

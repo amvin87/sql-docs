@@ -1,4 +1,5 @@
 ---
+description: "updateArray Method (int, java.sql.Array)"
 title: "updateArray Method (int, java.sql.Array) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerResultSet.updateArray (int, java.sql.Array)"
 apilocation: 

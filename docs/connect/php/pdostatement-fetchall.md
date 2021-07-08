@@ -1,12 +1,13 @@
 ---
-title: "PDOStatement::fetchAll | Microsoft Docs"
+title: "PDOStatement::fetchAll"
+description: "API reference for the PDOStatement::fetchAll function in the Microsoft PDO_SQLSRV Driver for PHP for SQL Server."
 ms.custom: ""
-ms.date: "01/19/2017"
+ms.date: "08/10/2020"
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: be74188a-77cd-4d19-b16e-77278373c979
 author: David-Engel
 ms.author: v-daenge

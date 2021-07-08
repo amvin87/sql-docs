@@ -1,4 +1,5 @@
 ---
+description: "Database Mail Configuration Objects"
 title: "Database Mail Configuration Objects | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/14/2017"
@@ -30,11 +31,11 @@ helpviewer_keywords:
   - "profiles [SQL Server], Database Mail"
   - "accounts [Database Mail]"
 ms.assetid: 03f6e4c0-04ff-490a-bd91-637806215bd1
-author: stevestein
-ms.author: sstein
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 ---
 # Database Mail Configuration Objects
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+ [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
   Database Mail has two configuration objects: The database configuration objects provide a way for you to configure the settings that Database mail should use when sending an email from your database application or [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent.  
   
 -   Database Mail accounts  

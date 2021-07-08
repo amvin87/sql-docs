@@ -1,4 +1,5 @@
 ---
+description: "getDateTimeOffset Method (SQLServerCallableStatement)"
 title: "getDateTimeOffset Method (SQLServerCallableStatement) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 7d9d7b05-582a-41df-b2c4-ec4a64d49752
 author: David-Engel
 ms.author: v-daenge

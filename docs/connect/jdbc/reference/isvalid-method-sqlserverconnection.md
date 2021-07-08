@@ -1,4 +1,5 @@
 ---
+description: "isValid Method (SQLServerConnection)"
 title: "isValid Method (SQLServerConnection) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 3b0a8bbf-9369-4456-9ab8-1434ccacdd7e
 author: David-Engel
 ms.author: v-daenge

@@ -1,4 +1,5 @@
 ---
+description: "getConnection Method (java.lang.String, java.lang.String)"
 title: "getConnection Method (java.lang.String, java.lang.String) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerDataSource.getConnection (java.lang.String, java.lang.String)"
 apilocation: 

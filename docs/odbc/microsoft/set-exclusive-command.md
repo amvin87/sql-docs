@@ -1,4 +1,5 @@
 ---
+description: "SET EXCLUSIVE Command"
 title: "SET EXCLUSIVE Command | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "SET EXCLUSIVE command [ODBC]"
 ms.assetid: d4fe12c5-7e8b-4d20-9ea4-2bcaffb271f2

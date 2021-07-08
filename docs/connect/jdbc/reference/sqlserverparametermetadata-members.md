@@ -1,4 +1,5 @@
 ---
+description: "SQLServerParameterMetaData Members"
 title: "SQLServerParameterMetaData Members | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: f9ebb203-2013-4feb-94f5-494b7f098f9a
 author: David-Engel
 ms.author: v-daenge

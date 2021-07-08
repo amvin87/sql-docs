@@ -1,4 +1,5 @@
 ---
+description: "Procedure Call Escape Sequence"
 title: "Procedure Call Escape Sequence | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "escape sequences [ODBC], procedure call"
   - "procedure call escape sequence [ODBC]"

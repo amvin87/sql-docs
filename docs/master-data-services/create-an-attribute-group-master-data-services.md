@@ -1,4 +1,5 @@
 ---
+description: "Create an Attribute Group (Master Data Services)"
 title: Create an Attribute Group
 ms.custom: ""
 ms.date: "03/15/2017"
@@ -11,12 +12,12 @@ helpviewer_keywords:
   - "attribute groups [Master Data Services], creating"
   - "creating attribute groups [Master Data Services]"
 ms.assetid: 798c325e-e8d8-412a-b02e-118f2741d1c7
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Create an Attribute Group (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   In [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], create attribute groups when you want to display attributes on individual tabs in the **Explorer** grid.  
   

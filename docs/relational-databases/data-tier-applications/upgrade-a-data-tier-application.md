@@ -1,4 +1,5 @@
 ---
+description: "Upgrade a Data-tier Application"
 title: "Upgrade a Data-tier Application | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/14/2017"
@@ -20,11 +21,11 @@ helpviewer_keywords:
   - "wizard [DAC], upgrade"
   - "How to [DAC], upgrade"
 ms.assetid: c117df94-f02b-403f-9383-ec5b3ac3763c
-author: "stevestein"
-ms.author: "sstein"
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 ---
 # Upgrade a Data-tier Application
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+[!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
   Use either the Upgrade Data-tier Application Wizard or a Windows PowerShell script to change the schema and properties of a currently deployed data-tier application (DAC) to match the schema and properties defined in a new version of the DAC.  
   
 -   **Before you begin:**  [Choosing DAC Upgrade Options](#ChoseDACUpgOptions), [Limitations and Restrictions](#LimitationsRestrictions), [Prerequisites](#Prerequisites), [Security](#Security), [Permissions](#Permissions)  
@@ -279,6 +280,5 @@ $fileStream.Close()
   
 ## See Also  
  [Data-tier Applications](../../relational-databases/data-tier-applications/data-tier-applications.md)   
- [SQL Server PowerShell](../../relational-databases/scripting/sql-server-powershell.md)  
-  
+ [SQL Server PowerShell](../../powershell/sql-server-powershell.md)  
   

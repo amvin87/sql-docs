@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot full transaction log error 9002"
-ms.custom: ""
+description: Learn about possible responses to a full transaction log in SQL Server and how to avoid the problem in the future.
 ms.date: "08/05/2016"
 ms.prod: sql
 ms.prod_service: "database-engine"
@@ -15,23 +15,25 @@ helpviewer_keywords:
   - "backing up transaction logs [SQL Server], full logs"
   - "transaction logs [SQL Server], full log"
   - "full transaction logs [SQL Server]"
-ms.assetid: 0f23aa84-475d-40df-bed3-c923f8c1b520
 author: "MashaMSFT"
 ms.author: "mathoma"
 ms.custom: "seo-lt-2019"
 ---
 # Troubleshoot a Full Transaction Log (SQL Server Error 9002)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+ [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
   This topic discusses possible responses to a full transaction log and suggests how to avoid it in the future. 
   
   When the transaction log becomes full, [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] issues a **9002 error**. The log can fill when the database is online, or in recovery. If the log fills while the database is online, the database remains online but can only be read, not updated. If the log fills during recovery, the [!INCLUDE[ssDE](../../includes/ssde-md.md)] marks the database as RESOURCE PENDING. In either case, user action is required to make log space available.  
+
+> [!NOTE]
+> **This article is focused on SQL Server.** For more specific information on this error in Azure SQL Database and Azure SQL Managed Instance, see [Troubleshooting transaction log errors with Azure SQL Database and Azure SQL Managed Instance](/azure/azure-sql/database/troubleshoot-transaction-log-errors-issues). Azure SQL Database and Azure SQL Managed Instance are based on the latest stable version of the Microsoft SQL Server database engine, so much of the content is similar though troubleshooting options and tools may differ.
   
 ## Responding to a full transaction log  
  The appropriate response to a full transaction log depends partly on what condition or conditions caused the log to fill. 
  
- To discover what is preventing log truncation in a given case, use the **log_reuse_wait** and **log_reuse_wait_desc** columns of the **sys.database** catalog view. For more information, see [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md). For descriptions of factors that can delay log truncation, see [The Transaction Log &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
+ To discover what is preventing log truncation in a given case, use the `log_reuse_wait` and `log_reuse_wait_desc` columns of the `sys.databases` catalog view. For more information, see [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md). For descriptions of factors that can delay log truncation, see [The Transaction Log &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
   
-> **IMPORTANT!!**  
+> [!IMPORTANT]  
 >  If the database was in recovery when the 9002 error occurred, after resolving the problem, recover the database by using [ALTER DATABASE *database_name* SET ONLINE.](../../t-sql/statements/alter-database-transact-sql-set-options.md)  
   
  Alternatives for responding to a full transaction log include:  
@@ -55,8 +57,8 @@ ms.custom: "seo-lt-2019"
   
  **To create a transaction log backup**  
   
-> **IMPORTANT**  
->  If the database is damaged, see [Tail-Log Backups &#40;SQL Server&#41;](../../relational-databases/backup-restore/tail-log-backups-sql-server.md).  
+> [!IMPORTANT]  
+> If the database is damaged, see [Tail-Log Backups &#40;SQL Server&#41;](../../relational-databases/backup-restore/tail-log-backups-sql-server.md).  
   
 -   [Back Up a Transaction Log &#40;SQL Server&#41;](../../relational-databases/backup-restore/back-up-a-transaction-log-sql-server.md)  
   
@@ -68,7 +70,8 @@ ms.custom: "seo-lt-2019"
 ### Move the log file to a different disk  
  If you cannot free enough disk space on the drive that currently contains the log file, consider moving the file to another drive with sufficient space.  
   
-> **IMPORTANT!!** Log files should never be placed on compressed file systems.  
+> [!IMPORTANT]
+> Log files should never be placed on compressed file systems.  
   
  **Move a log file**  
   
@@ -85,7 +88,8 @@ ms.custom: "seo-lt-2019"
   
 -   Turn on autogrow by using the ALTER DATABASE statement to set a non-zero growth increment for the FILEGROWTH option.  
   
-> **NOTE** In either case, if the current size limit has been reached, increase the MAXSIZE value.  
+> [!NOTE]
+> In either case, if the current size limit has been reached, increase the MAXSIZE value.  
   
 ### Add a log file on a different disk  
  Add a new log file to the database on a different disk that has sufficient space by using ALTER DATABASE <database_name> ADD LOG FILE.  
@@ -106,7 +110,6 @@ This statement lets you identify the user ID of the owner of the transaction, so
 Sometimes you just have to end the process; you may have to use the [KILL](../../t-sql/language-elements/kill-transact-sql.md) statement. Please use this statement very carefully,  especially when critical processes are running that you don't want to kill. For more information, see [KILL (Transact-SQL)](../../t-sql/language-elements/kill-transact-sql.md)
 
 ## See also  
-[KB support article - A transaction log grows unexpectedly or becomes full in SQL Server](https://support.microsoft.com/kb/317375)
  [ALTER DATABASE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql.md)   
  [Manage the Size of the Transaction Log File](../../relational-databases/logs/manage-the-size-of-the-transaction-log-file.md)   
  [Transaction Log Backups &#40;SQL Server&#41;](../../relational-databases/backup-restore/transaction-log-backups-sql-server.md)   

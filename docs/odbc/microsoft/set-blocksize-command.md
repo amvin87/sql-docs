@@ -1,4 +1,5 @@
 ---
+description: "SET BLOCKSIZE Command"
 title: "SET BLOCKSIZE Command | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "set blocksize command [ODBC]"
 ms.assetid: 0c11580f-37f5-4a8e-99be-9fb9c44bb433

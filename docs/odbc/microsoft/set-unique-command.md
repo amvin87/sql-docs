@@ -1,4 +1,5 @@
 ---
+description: "SET UNIQUE Command"
 title: "SET UNIQUE Command | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "SET UNIQUE command [ODBC]"
 ms.assetid: 1f69e31e-4599-47cc-ac89-b86fba8703c5

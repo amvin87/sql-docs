@@ -1,4 +1,5 @@
 ---
+description: "Reserved Words (Master Data Services)"
 title: Reserved Words
 ms.custom: ""
 ms.date: "03/01/2017"
@@ -11,12 +12,12 @@ helpviewer_keywords:
   - "reserved words [Master Data Services]"
   - "Master Data Services, reserved words"
 ms.assetid: 88afd0d0-4362-4394-8357-4e65388fc0fc
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Reserved Words (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   In [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], when you create model objects or members, some words cannot be used. Using these words may cause errors.  
   

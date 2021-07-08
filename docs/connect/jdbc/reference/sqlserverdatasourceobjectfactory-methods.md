@@ -1,4 +1,5 @@
 ---
+description: "SQLServerDataSourceObjectFactory Methods"
 title: "SQLServerDataSourceObjectFactory Methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: d64064bc-59dc-4614-a078-c2304d2fc236
 author: David-Engel
 ms.author: v-daenge

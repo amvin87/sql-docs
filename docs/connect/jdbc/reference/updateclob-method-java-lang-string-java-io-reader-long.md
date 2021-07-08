@@ -1,4 +1,5 @@
 ---
+description: "updateClob Method (java.lang.String, java.io.Reader, long)"
 title: "updateClob Method (java.lang.String, java.io.Reader, long) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 6b8f759a-ce5d-41b2-b6cc-24a3ab299f1f
 author: David-Engel
 ms.author: v-daenge

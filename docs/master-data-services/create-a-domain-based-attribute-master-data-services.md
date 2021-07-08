@@ -1,4 +1,5 @@
 ---
+description: "Create a Domain-Based Attribute (Master Data Services)"
 title: Create a Domain-Based Attribute
 ms.custom: ""
 ms.date: "07/25/2017"
@@ -12,12 +13,12 @@ helpviewer_keywords:
   - "creating domain-based attributes [Master Data Services]"
   - "attributes [Master Data Services], creating domain-based attributes"
 ms.assetid: 11c31c9f-e6cc-47b7-b76a-d691f84c93c6
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Create a Domain-Based Attribute (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   In [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], create a domain-based attribute to populate an attribute's values with members from an entity.
 

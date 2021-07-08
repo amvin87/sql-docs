@@ -1,4 +1,5 @@
 ---
+description: "SQLServerResource Class"
 title: "SQLServerResource Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e7e362d1-6b5f-4e8c-8862-2001102cf4f9
 author: David-Engel
 ms.author: v-daenge

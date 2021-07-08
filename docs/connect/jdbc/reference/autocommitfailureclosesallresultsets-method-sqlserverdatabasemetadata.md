@@ -1,4 +1,5 @@
 ---
+description: "autoCommitFailureClosesAllResultSets Method (SQLServerDatabaseMetaData)"
 title: "Does JDBC Driver Close Open Result Sets | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 1739ecb5-e5cb-4807-b5a8-97c0299929d0
 author: David-Engel
 ms.author: v-daenge

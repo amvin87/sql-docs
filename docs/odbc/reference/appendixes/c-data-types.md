@@ -1,4 +1,5 @@
 ---
+description: "C Data Types"
 title: "C Data Types | Microsoft Docs"
 ms.custom: ""
 ms.date: "07/12/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "data types [ODBC], C data types"
   - "C data types [ODBC], about C data types"

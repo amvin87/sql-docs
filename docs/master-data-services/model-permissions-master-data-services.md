@@ -1,4 +1,5 @@
 ---
+description: "Model Permissions (Master Data Services)"
 title: Model Permissions
 ms.custom: ""
 ms.date: "03/01/2017"
@@ -11,12 +12,12 @@ helpviewer_keywords:
   - "models [Master Data Services], permissions"
   - "permissions [Master Data Services], models"
 ms.assetid: 210f440b-2cc1-4c49-94b1-3a97e2af7bc3
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Model Permissions (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   Model permissions apply to all entities, derived hierarchies, explicit hierarchies, and collections that exist within the model. Permissions assigned to the model can be overridden for any individual object.  
   

@@ -1,4 +1,5 @@
 ---
+description: "SQLSetPos (Cursor Library)"
 title: "SQLSetPos (Cursor Library) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "SQLSetPos function [ODBC], Cursor Library"
 ms.assetid: 574399c3-2bb2-4d19-829c-7c77bd82858d

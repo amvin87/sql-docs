@@ -1,12 +1,13 @@
 ---
-title: "getTime Method (java.lang.String, java.util.Calendar) | Microsoft Docs"
+description: "getTime Method (java.lang.String, java.util.Calendar) (SQLServerResultSet)"
+title: "getTime Method (java.lang.String, java.util.Calendar) (SQLServerResultSet) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerResultSet.getTime (java.lang.String, java.util.Calendar)"
 apilocation: 

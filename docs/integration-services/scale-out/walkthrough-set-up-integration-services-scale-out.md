@@ -1,6 +1,6 @@
 ---
 title: "Walkthrough: Set Up SSIS Scale Out | Microsoft Docs"
-description: "This article walks you through the setup and configuration of SSIS Scale Out"
+description: "Learn details about the setup and configuration of SQL Server Integration Services (SSIS) Scale Out Master."
 ms.custom: performance
 ms.date: "12/13/2017"
 ms.prod: sql
@@ -13,7 +13,7 @@ ms.reviewer: maghan
 ---
 # Walkthrough: Set up Integration Services (SSIS) Scale Out
 
-[!INCLUDE[ssis-appliesto](../../includes/ssis-appliesto-ssvrpluslinux-asdb-asdw-xxx.md)]
+[!INCLUDE[sqlserver-ssis](../../includes/applies-to-version/sqlserver-ssis.md)]
 
 
 Set up [!INCLUDE[ssISnoversion_md](../../includes/ssisnoversion-md.md)] (SSIS) Scale Out by completing the following tasks. 
@@ -70,7 +70,7 @@ To install the Scale Out Master feature, use the [!INCLUDE[ssNoVersion_md](../..
 
 ### Install Scale Out Master from the command prompt
 
-Follow the instructions in [Install SQL Server from the Command Prompt](../../database-engine/install-windows/install-sql-server-2016-from-the-command-prompt.md). Set the parameters for Scale Out Master by doing the following things:
+Follow the instructions in [Install SQL Server from the Command Prompt](../../database-engine/install-windows/install-sql-server-from-the-command-prompt.md). Set the parameters for Scale Out Master by doing the following things:
  
 1.  Add `IS_Master` to the parameter `/FEATURES`
 
@@ -125,7 +125,7 @@ To install the Scale Out Worker feature, use the [!INCLUDE[ssNoVersion_md](../..
 
 ### Install Scale Out Worker from the command prompt
 
-Follow the instructions in [Install SQL Server from the Command Prompt](../../database-engine/install-windows/install-sql-server-2016-from-the-command-prompt.md). Set the parameters for Scale Out Worker by doing the following things:
+Follow the instructions in [Install SQL Server from the Command Prompt](../../database-engine/install-windows/install-sql-server-from-the-command-prompt.md). Set the parameters for Scale Out Worker by doing the following things:
 
 1.  Add IS_Worker to the parameter `/FEATURES`.
 

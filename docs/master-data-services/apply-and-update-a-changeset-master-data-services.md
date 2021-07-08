@@ -1,4 +1,5 @@
 ---
+description: "Apply and Update a Changeset (Master Data Services)"
 title: Apply and Update a Changeset
 ms.custom: ""
 ms.date: "03/01/2017"
@@ -8,12 +9,12 @@ ms.reviewer: ""
 ms.technology: master-data-services
 ms.topic: conceptual
 ms.assetid: 3a6a3cf2-1e77-43d3-a64a-855ae51258e7
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Apply and Update a Changeset (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   A changeset is a collection of the pending changes on the master data. You can apply the changeset locally to view, add, update and delete the pending changes in the changeset.  
   

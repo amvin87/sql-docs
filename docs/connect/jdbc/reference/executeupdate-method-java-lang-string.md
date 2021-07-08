@@ -1,4 +1,5 @@
 ---
+description: "executeUpdate Method (java.lang.String, int[])"
 title: "executeUpdate Method (java.lang.String, int[]) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerStatement.executeUpdate (java.lang.String, int[])"
 apilocation: 

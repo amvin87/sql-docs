@@ -1,4 +1,5 @@
 ---
+description: "SQLBindCol (Cursor Library)"
 title: "SQLBindCol (Cursor Library) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "SQLAllocStmt function [ODBC], Cursor Library"
 ms.assetid: f4dd546a-0a6c-4397-8ee7-fafa6b9da543

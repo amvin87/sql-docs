@@ -1,4 +1,5 @@
 ---
+description: "Add Multiple Conditions to a Business Rule (Master Data Services)"
 title: Add Conditions to a Business Rule
 ms.custom: "seo-lt-2019"
 ms.date: "03/01/2017"
@@ -10,12 +11,12 @@ ms.topic: conceptual
 helpviewer_keywords: 
   - "business rules [Master Data Services], multiple conditions"
 ms.assetid: 5f0f6958-6cf2-444b-bdcd-05b887637a0b
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Add Multiple Conditions to a Business Rule (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   In [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], add multiple **AND** or **OR** conditions to a business rule when you want a more complex rule.  
   

@@ -1,4 +1,5 @@
 ---
+description: "getCharacterStream Method (SQLServerNClob)"
 title: "getCharacterStream Method (SQLServerNClob) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 835e9cb8-5fd5-4a05-aa47-59ae3ed1ae6d
 author: David-Engel
 ms.author: v-daenge

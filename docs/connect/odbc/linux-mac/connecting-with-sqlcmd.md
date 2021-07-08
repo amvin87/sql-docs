@@ -2,7 +2,7 @@
 title: "Connecting with sqlcmd"
 description: "Learn how to use the sqlcmd utility with the Microsoft ODBC Driver for SQL Server on Linux and macOS."
 ms.custom: ""
-ms.date: "01/19/2017"
+ms.date: 02/24/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
@@ -17,11 +17,11 @@ ms.author: v-daenge
 # Connecting with sqlcmd
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
 
-The [sqlcmd](https://go.microsoft.com/fwlink/?LinkID=154481) utility is available with the [!INCLUDE[msCoName](../../../includes/msconame_md.md)] ODBC Driver for [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] on Linux and macOS.
+The [sqlcmd](../../../tools/sqlcmd-utility.md) utility is available with the [!INCLUDE[msCoName](../../../includes/msconame_md.md)] ODBC Driver for [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] on Linux and macOS.
   
 The following commands show how to use Windows Authentication (Kerberos) and [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Authentication, respectively:
   
-```  
+```console
 sqlcmd -E -Sxxx.xxx.xxx.xxx  
 sqlcmd -Sxxx.xxx.xxx.xxx -Uxxx -Pxxx  
 ```  
@@ -51,6 +51,12 @@ In the current release, the following options are available:
 - -f codepage | i:codepage[,o:codepage] | o:codepage[,i:codepage]
 Specifies the input and output code pages. The codepage number is a numeric value that specifies an installed Linux code page.
 (available since 17.5.1.1)
+
+- -G This switch is used by the client when connecting to SQL Database or Azure Synapse Analytics to specify that the user be authenticated using Azure Active Directory authentication. This option sets the sqlcmd scripting variable SQLCMDUSEAAD = true. The -G switch requires at least sqlcmd version 17.6. To determine your version, execute sqlcmd -?.
+
+> [!IMPORTANT]
+> The `-G` option only applies to Azure SQL Database and Azure Synapse Analytics.
+> AAD Interactive Authentication is not currently supported on Linux or macOS. AAD Integrated Authentication requires [Microsoft ODBC Driver 17 for SQL Server](../download-odbc-driver-for-sql-server.md) version 17.6.1 or higher and a properly [configured Kerberos environment](using-integrated-authentication.md#configure-kerberos).
 
 - -h *number_of_rows*  Specify the number of rows to print between the column headings.  
   
@@ -119,6 +125,10 @@ Specify the instance of [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.
   
 - -Y *fixed_length_type_display_width* Set the `sqlcmd` scripting variable `SQLCMDMAXVARTYPEWIDTH`.
 
+- -z *password* Change password.  
+  
+- -Z *password* Change password and exit.  
+
 
 ## Available Commands
 
@@ -165,26 +175,30 @@ In the current release, the following options are not available:
   
 You can use the following alternative method: Put the parameters inside one file, which you can then append to another file. This will help you use a parameter file to replace the values. For example, create a file called `a.sql` (the parameter file) with the following content:
   
+```console
     :setvar ColumnName object_id  
     :setvar TableName sys.objects  
+```
   
 Then create a file called `b.sql`, with the parameters for replacement:  
   
+```sql
     select $(ColumnName) from $(TableName)  
+```
 
 At the command line, combine `a.sql` and `b.sql` into `c.sql` using the following commands:  
   
+```console
     cat a.sql > c.sql 
   
     cat b.sql >> c.sql  
+```
   
 Run `sqlcmd` and use `c.sql` as input file:  
   
-    slqcmd -S<...> -P<..> -U<..> -I c.sql  
-
-- -z *password* Change password.  
-  
-- -Z *password* Change password and exit.  
+```console
+    sqlcmd -S<...> -P<..> -U<..> -I c.sql  
+```
 
 ## Unavailable Commands
 
@@ -198,25 +212,17 @@ In the current release, the following commands are not available:
   
 ## DSN Support in sqlcmd and bcp
 
-You can specify a data source name (DSN) instead of a server name in the **sqlcmd** or **bcp** `-S` option (or **sqlcmd** :Connect command) if you specify -D. -D causes **sqlcmd** or **bcp** to connect to the server specified in the DSN by the -S option.  
+You can specify a data source name (DSN) instead of a server name in the **sqlcmd** or **bcp** `-S` option (or **sqlcmd** :Connect command) if you specify `-D`. `-D` causes **sqlcmd** or **bcp** to connect to the server specified in the DSN by the `-S` option.  
   
 System DSNs are stored in the `odbc.ini` file in the ODBC SysConfigDir directory (`/etc/odbc.ini` on standard installations). User DSNs are stored in `.odbc.ini` in a user's home directory (`~/.odbc.ini`).
-  
-The following entries are supported in a DSN on Linux or macOS:
 
--   **ApplicationIntent=ReadOnly**  
+On Windows systems, System and User DSNs are stored in the registry and managed via odbcad32.exe. File DSNs are not supported by bcp and sqlcmd.
 
--   **Database=**_database\_name_  
-  
--   **Driver=ODBC Driver 11 for SQL Server** or **Driver=ODBC Driver 13 for SQL Server**
-  
--   **MultiSubnetFailover=Yes**  
-  
--   **Server=**_server\_name\_or\_IP\_address_  
-  
--   **Trusted_Connection=yes**|**no**  
-  
-In a DSN, only the DRIVER entry is required, but to connect to a server, `sqlcmd` or `bcp` needs the value in the SERVER entry.  
+See [DSN and Connection String Keywords and Attributes](../dsn-connection-string-attribute.md) for the list of entries which the driver supports.
+
+In a DSN, only the DRIVER entry is required, but to connect to a remote server, `sqlcmd` or `bcp` needs a value in the SERVER element. If the SERVER element is empty or not present in the DSN, `sqlcmd` and `bcp` will attempt to connect to the default instance on the local system.
+
+When using bcp on Windows systems, [!INCLUDE [sssql17-md](../../../includes/sssql17-md.md)] and earlier require the SQL Native Client 11 driver (sqlncli11.dll) while [!INCLUDE [sssql19-md](../../../includes/sssql19-md.md)] and higher require the Microsoft ODBC Driver 17 for SQL Server driver (msodbcsql17.dll).  
 
 If the same option is specified in both the DSN and the `sqlcmd` or `bcp` command line, the command line option overrides the value used in the DSN. For example, if the DSN has a DATABASE entry and the `sqlcmd` command line includes **-d**, the value passed to **-d** is used. If **Trusted_Connection=yes** is specified in the DSN, Kerberos authentication is used and user name (**-U**) and password (**-P**), if provided, are ignored.
 
@@ -224,4 +230,4 @@ Existing scripts that invoke `isql` can be modified to use `sqlcmd` by defining 
 
 ## See Also  
 [Connecting with **bcp**](connecting-with-bcp.md)  
- 
+[Release Notes](release-notes-tools.md)

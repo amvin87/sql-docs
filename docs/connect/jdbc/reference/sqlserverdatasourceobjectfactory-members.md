@@ -1,4 +1,5 @@
 ---
+description: "SQLServerDataSourceObjectFactory Members"
 title: "SQLServerDataSourceObjectFactory Members | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 52c6b133-f7ed-468d-8f34-bc2e4b81553e
 author: David-Engel
 ms.author: v-daenge

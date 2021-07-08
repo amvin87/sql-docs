@@ -1,4 +1,5 @@
 ---
+description: "SQLServerResultSetMetaData Class"
 title: "SQLServerResultSetMetaData Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 9a36885f-83f3-44af-85f0-2b849dfd20d4
 author: David-Engel
 ms.author: v-daenge

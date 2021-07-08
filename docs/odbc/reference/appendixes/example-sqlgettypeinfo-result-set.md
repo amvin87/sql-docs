@@ -1,4 +1,5 @@
 ---
+description: "Example SQLGetTypeInfo Result Set"
 title: "Example SQLGetTypeInfo Result Set | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2019"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "SQL data types [ODBC], examples"
   - "SQLGetTypeInfo function [ODBC], examples"

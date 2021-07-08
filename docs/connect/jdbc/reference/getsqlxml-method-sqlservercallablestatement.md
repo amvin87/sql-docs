@@ -1,4 +1,5 @@
 ---
+description: "getSQLXML Method (SQLServerCallableStatement)"
 title: "getSQLXML Method (SQLServerCallableStatement) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 8bcf9eda-b36c-480c-8bf2-91c392d5a0ee
 author: David-Engel
 ms.author: v-daenge

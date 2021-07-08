@@ -1,4 +1,5 @@
 ---
+description: "C to SQL: Year-Month Intervals"
 title: "C to SQL: Year-Month Intervals | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "converting data from c to SQL types [ODBC], year-month intervals"
   - "intervals [ODBC], converting"

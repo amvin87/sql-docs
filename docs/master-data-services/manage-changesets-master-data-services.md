@@ -1,4 +1,5 @@
 ---
+description: "Manage Changesets (Master Data Services)"
 title: Manage Changesets
 ms.custom: ""
 ms.date: "03/01/2017"
@@ -8,12 +9,12 @@ ms.reviewer: ""
 ms.technology: master-data-services
 ms.topic: conceptual
 ms.assetid: cc74d46d-7566-45d8-9b51-2cfc262f6abe
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Manage Changesets (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   In [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] you can manage all changes by model and version.  
   

@@ -1,17 +1,17 @@
 ---
 title: Unattended install for SQL Server on SUSE Linux Enterprise Server
 titleSuffix: SQL Server
-description: SQL Server Script Sample - Unattended Install on SUSE Linux Enterprise Server
+description: Use a sample Bash script to install SQL Server 2017 on SUSE Linux Enterprise Server (SLES) v12 SP2 without interactive input.
 author: VanMSFT 
 ms.author: vanto
-ms.date: 11/04/2019
+ms.date: 06/10/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ---
 # Sample: Unattended SQL Server installation script for SUSE Linux Enterprise Server
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-linuxonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-linuxonly.md)]
+[!INCLUDE [SQL Server - Linux](../includes/applies-to-version/sql-linux.md)]
 
 This sample Bash script installs SQL Server 2017 on SUSE Linux Enterprise Server (SLES) v12 SP2 without interactive input. It provides examples of installing the database engine, the SQL Server command-line tools, SQL Server Agent, and performs post-install steps. You can optionally install full-text search and create an administrative user.
 
@@ -25,7 +25,7 @@ This sample Bash script installs SQL Server 2017 on SUSE Linux Enterprise Server
 - For other system requirements, see [System requirements for SQL Server on Linux](sql-server-linux-setup.md#system).
 
 > [!IMPORTANT]
-> SQL Server 2017 requires libsss_nss_idmap0, which is not provided by the default SLES repositories. You can install it from the SLES v12 SP2 SDK.
+> SQL Server 2017 requires libsss_nss_idmap0, which is not provided by the default SLES repositories. You can install it from the SLES v12 SP5 SDK.
 
 ## Sample script
 
@@ -63,8 +63,8 @@ sudo zypper addrepo -fc https://packages.microsoft.com/config/sles/12/mssql-serv
 sudo zypper addrepo -fc https://packages.microsoft.com/config/sles/12/prod.repo 
 sudo zypper --gpg-auto-import-keys refresh
 
-#Add the SLES v12 SP2 SDK to obtain libsss_nss_idmap0
-sudo SUSEConnect -p sle-sdk/12.2/x86_64
+#Add the SLES v12 SP5 SDK to obtain libsss_nss_idmap0
+sudo SUSEConnect -p sle-sdk/12.5/x86_64
 
 echo Installing SQL Server...
 sudo zypper install -y mssql-server

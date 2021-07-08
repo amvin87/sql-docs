@@ -1,4 +1,5 @@
 ---
+description: "updateBoolean Method (java.lang.String, boolean)"
 title: "updateBoolean Method (java.lang.String, boolean) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerResultSet.updateBoolean (java.lang.String, boolean)"
 apilocation: 

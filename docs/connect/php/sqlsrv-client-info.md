@@ -1,12 +1,13 @@
 ---
-title: "sqlsrv_client_info | Microsoft Docs"
+title: "sqlsrv_client_info"
+description: "API reference for the sqlsrv_client_info function in the Microsoft SQLSRV Driver for PHP for SQL Server."
 ms.custom: ""
 ms.date: "01/19/2017"
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "sqlsrv_client_info"
 apitype: "NA"

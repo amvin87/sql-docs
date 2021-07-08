@@ -1,20 +1,20 @@
 ---
-title: "Plan Guide Successful Event Class | Microsoft Docs"
+description: "Plan Guide Successful Event Class"
+title: "Plan Guide Successful Event Class"
 ms.custom: ""
-ms.date: "03/14/2017"
+ms.date: "06/22/2021"
 ms.prod: sql
 ms.reviewer: ""
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "Plan Guide Successful event class"
-ms.assetid: fecfbb6c-56c9-4db4-84d3-00d6e338355a
-author: "stevestein"
-ms.author: "sstein"
-monikerRange: "=azuresqldb-current||>=sql-server-2016||=sqlallproducts-allversions||>=sql-server-linux-2017||=azuresqldb-mi-current"
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+monikerRange: ">=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current"
 ---
 # Plan Guide Successful Event Class
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+ [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   The Plan Guide Successful event class indicates that [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] successfully produced an execution plan for a query or batch that contained a plan guide. The event fires when the following conditions are true:  
   
@@ -22,8 +22,11 @@ monikerRange: "=azuresqldb-current||>=sql-server-2016||=sqlallproducts-allversio
   
 -   The query in the plan guide definition matches the query being executed.  
   
--   The hints in the plan guide definition, including the USE PLAN hint, were applied successfully to the query. That is, the compiled query plan honors the specified hints.  
-  
+-   The hints in the plan guide definition, including the `USE PLAN` hint, were applied successfully to the query. That is, the compiled query plan honors the specified hints.  
+
+> [!NOTE]
+> This event class is not available in [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+    
 ## Plan Guide Successful Event Class Data Columns  
   
 |Data column name|Data type|Description|Column ID|Filterable|  

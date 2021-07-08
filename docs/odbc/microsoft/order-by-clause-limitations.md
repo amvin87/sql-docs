@@ -1,4 +1,5 @@
 ---
+description: "ORDER BY Clause Limitations"
 title: "ORDER BY Clause Limitations | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "ODBC SQL grammar, ORDER BY clause limitations"
   - "ORDER BY clause limitations [ODBC]"

@@ -1,4 +1,5 @@
 ---
+description: "setNClob Method (java.lang.String, java.sql.NClob)"
 title: "setNClob Method (java.lang.String, java.sql.NClob) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 4e30d242-0c1b-45db-b75f-41b041692f31
 author: David-Engel
 ms.author: v-daenge

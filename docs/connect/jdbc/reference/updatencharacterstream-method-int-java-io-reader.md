@@ -1,4 +1,5 @@
 ---
+description: "updateNCharacterStream Method (int, java.io.Reader)"
 title: "updateNCharacterStream Method (int, java.io.Reader) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: fc746413-bdbf-4109-aee0-385a1270c847
 author: David-Engel
 ms.author: v-daenge

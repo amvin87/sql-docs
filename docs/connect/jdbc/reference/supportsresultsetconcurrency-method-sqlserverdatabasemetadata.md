@@ -1,4 +1,5 @@
 ---
+description: "supportsResultSetConcurrency Method (SQLServerDatabaseMetaData)"
 title: "supportsResultSetConcurrency Method (SQLServerDatabaseMetaData) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerDatabaseMetaData.supportsResultSetConcurrency"
 apilocation: 
@@ -56,12 +57,12 @@ public boolean supportsResultSetConcurrency(int type,
   
  An **int** that indicates the result set concurrency level, which can be one of the following values as defined in java.sql.ResultSet or SQLServerResultSet:  
   
-## java.sql.ResultSet Types  
+## Concurrency java.sql.ResultSet Types  
  CONCUR_READ_ONLY  
   
  CONCUR_UPDATABLE  
   
-## SQLServerResultSet Types  
+## Concurrency SQLServerResultSet Types  
  CONCUR_SS_OPTIMISTIC_CC  
   
  CONCUR_SS_SCROLL_LOCKS  

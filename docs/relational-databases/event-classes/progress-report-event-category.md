@@ -1,22 +1,23 @@
 ---
+description: "Progress Report Event Category"
 title: "Progress Report Event Category | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/01/2017"
 ms.prod: sql
 ms.reviewer: ""
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "event classes [SQL Server], Progress Report event category"
   - "Progress Report event category [SQL Server]"
   - "SQL Server event classes, Progress Report event category"
 ms.assetid: 15eba54b-ad75-4eda-9fc3-429672da46f2
-author: "stevestein"
-ms.author: "sstein"
-monikerRange: "=azuresqldb-current||>=sql-server-2016||=sqlallproducts-allversions||>=sql-server-linux-2017||=azuresqldb-mi-current"
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+monikerRange: "=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current"
 ---
 # Progress Report Event Category
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+[!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]
   The **Progress Report** event category contains the **Progress Report: Online Index Operation** event class.  
   
 |Topic|Description|  

@@ -1,4 +1,5 @@
 ---
+description: "DBCC CHECKCATALOG (Transact-SQL)"
 title: "DBCC CHECKCATALOG (Transact-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "11/14/2017"
@@ -25,7 +26,7 @@ author: pmasl
 ms.author: umajay
 ---
 # DBCC CHECKCATALOG (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
+[!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
   Checks for catalog consistency within the specified database. The database must be online.  
   
@@ -33,7 +34,7 @@ ms.author: umajay
   
 ## Syntax  
   
-```  
+```syntaxsql  
 DBCC CHECKCATALOG   
 [   
     (   
@@ -43,7 +44,9 @@ DBCC CHECKCATALOG
     [ WITH NO_INFOMSGS ]   
 ```  
   
-## Arguments  
+[!INCLUDE[sql-server-tsql-previous-offline-documentation](../../includes/sql-server-tsql-previous-offline-documentation.md)]
+
+## Arguments
  *database_name* | *database_id* | 0  
  Is the name or ID of the database for which to check catalog consistency. If not specified, or if 0 is specified, the current database is used. Database names must comply with the rules for [identifiers](../../relational-databases/databases/database-identifiers.md).  
   
@@ -51,7 +54,7 @@ DBCC CHECKCATALOG
  Suppresses all informational messages.  
   
 ## Remarks  
-After the DBCC CATALOG command finishes, a message is written to the [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] error log. If the DBCC command successfully executes, the message indicates a successful completion and the amount of time that the command ran. If the DBCC command stops before completing the check because of an error, the message indicates the command was terminated, a state value, and the amount of time the command ran. The following table lists and describes the state values that can be included in the message.
+After the DBCC CHECKCATALOG command finishes, a message is written to the [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] error log. If the DBCC command successfully executes, the message indicates a successful completion and the amount of time that the command ran. If the DBCC command stops before completing the check because of an error, the message indicates the command was terminated, a state value, and the amount of time the command ran. The following table lists and describes the state values that can be included in the message.
   
 |State|Description|  
 |-----------|-----------------|  

@@ -1,4 +1,5 @@
 ---
+description: "NOT NULL Limitations"
 title: "NOT NULL Limitations | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "ODBC SQL grammar, NOT NULL limitations"
   - "NOT NULL limitations [ODBC]"

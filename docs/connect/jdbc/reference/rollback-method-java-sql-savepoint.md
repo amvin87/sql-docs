@@ -1,4 +1,5 @@
 ---
+description: "rollback Method (java.sql.Savepoint)"
 title: "rollback Method (java.sql.Savepoint) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerConnection.rollback (java.sql.Savepoint)"
 apilocation: 

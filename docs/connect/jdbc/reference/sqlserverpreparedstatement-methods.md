@@ -1,4 +1,5 @@
 ---
+description: "SQLServerPreparedStatement Methods"
 title: "SQLServerPreparedStatement Methods | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: f0e1be74-b7a3-4b81-8835-0a8bc3aaa3f5
 author: David-Engel
 ms.author: v-daenge

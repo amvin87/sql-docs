@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Express LocalDB | Microsoft Docs"
+description: Become familiar with SQL Server Express LocalDB. Developers can use this lightweight Database Engine for writing and testing Transact-SQL code.
 ms.custom: ""
 ms.date: "04/17/2019"
 ms.prod: sql
@@ -14,13 +15,13 @@ helpviewer_keywords:
 - "file database"
 - "LocalDB"
 ms.assetid: 5a641a46-7cfb-4d7b-a90d-6e4625719d74
-author: MashaMSFT
-ms.author: mathoma
+author: markingmyname
+ms.author: maghan
 ---
 
 # SQL Server Express LocalDB
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+ [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
 Microsoft SQL Server Express LocalDB is a feature of [SQL Server Express](../../sql-server/editions-and-components-of-sql-server-version-15.md) targeted to developers. It is available on SQL Server Express with Advanced Services.
 
@@ -49,7 +50,7 @@ An instance of [!INCLUDE[ssExpress](../../includes/ssexpress-md.md)] LocalDB is 
 
 The LocalDB setup program uses the `SqlLocalDB.msi` program to install the necessary files on the computer. Once installed, LocalDB is an instance of [!INCLUDE[ssExpress](../../includes/ssexpress-md.md)] that can create and open [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] databases. The system database files for the database are stored in the local AppData path, which is normally hidden. For example, `C:\Users\<user>\AppData\Local\Microsoft\Microsoft SQL Server Local DB\Instances\LocalDBApp1\`. User database files are stored where the user designates, typically somewhere in the `C:\Users\<user>\Documents\` folder.
 
-For more information about including LocalDB in an application, see [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] [Local Data Overview](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/ms233817(v=vs.110)), [Create a database and add tables in Visual Studio](/visualstudio/data-tools/create-a-sql-database-by-using-a-designer).
+For more information about including LocalDB in an application, see [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] [Local Data Overview](/previous-versions/visualstudio/visual-studio-2012/ms233817(v=vs.110)), [Create a database and add tables in Visual Studio](/visualstudio/data-tools/create-a-sql-database-by-using-a-designer).
 
 For more information about the LocalDB API, see [SQL Server Express LocalDB Reference](../../relational-databases/sql-server-express-localdb-reference.md).
 
@@ -58,6 +59,10 @@ The `SqlLocalDb` utility can create new instances of LocalDB, start and stop an 
 The instance collation for LocalDB is set to `SQL_Latin1_General_CP1_CI_AS` and cannot be changed. Database-level, column-level, and expression-level collations are supported normally. Contained databases follow the metadata and `tempdb` collations rules defined by [Contained Database Collations](../../relational-databases/databases/contained-database-collations.md).
 
 ### Restrictions
+
+- LocalDB cannot be patched beyond Service Packs. CUs and Security Updates cannot be applied manually and will not be applied via Windows Update, Windows Update for Business, or other methods.
+
+- LocalDB cannot be managed remotely via SQL Management Studio.
 
 - LocalDB cannot be a merge replication subscriber.
 
@@ -87,7 +92,7 @@ Only an administrator on the computer can create a shared instance of LocalDB. A
 
 ### Connect to the automatic instance
 
-The easiest way to use LocalDB is to connect to the automatic instance owned by the current user by using the connection string `Server=(localdb)\MSSQLLocalDB;Integrated Security=true`. To connect to a specific database by using the file name, connect using a connection string similar to `Server=(LocalDB)\MSSQLLocalDB; Integrated Security=true ;AttachDbFileName=D:\Data\MyDB1.mdf`.
+The easiest way to use LocalDB is to connect to the automatic instance owned by the current user by using the connection string `Server=(localdb)\MSSQLLocalDB;Integrated Security=true`. To connect to a specific database by using the file name, connect using a connection string similar to `Server=(LocalDB)\MSSQLLocalDB;Integrated Security=true;AttachDbFileName=D:\Data\MyDB1.mdf`.
 
 The naming convention and connection string for LocalDB format changed in SQL Server 2014. Previously, the instance name was a single v character followed by LocalDB and the version number. Starting with SQL Server 2014, this instance name format is no longer supported, and the connection string mentioned previously should be used instead.  
 
@@ -110,7 +115,7 @@ REM Gather information about the instance of LocalDB
 
  The last line above, returns information similar to the following.
 
-|||
+|Category|Value|
 |-|-|
 |Name|`LocalDBApp1`|
 |Version|\<Current Version>|

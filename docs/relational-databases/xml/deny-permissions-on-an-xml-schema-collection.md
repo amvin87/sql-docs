@@ -11,11 +11,11 @@ ms.topic: conceptual
 helpviewer_keywords: 
   - "denying permissions [SQL Server], XML server collections"
 ms.assetid: e2b300b0-e734-4c43-a4da-c78e6e5d4fba
-author: MightyPen
-ms.author: genemi
+author: rothja
+ms.author: jroth
 ---
 # Deny Permissions on an XML Schema Collection
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+[!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
   Permission can be denied to either create a new XML schema collection or use an existing one.  
   
 ## Denying Permission to Create an XML Schema Collection  

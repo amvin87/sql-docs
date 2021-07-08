@@ -1,4 +1,5 @@
 ---
+description: "Connect to a Master Data Services Database Dialog Box"
 title: Connect to a MDS Database Dialog Box
 ms.custom: "seo-lt-2019"
 ms.date: "03/20/2017"
@@ -10,12 +11,12 @@ ms.topic: conceptual
 f1_keywords: 
   - "sql13.mds.configmanager.srvconnect.f1"
 ms.assetid: b2f8c9b9-c31e-4f0d-9095-978709423190
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Connect to a Master Data Services Database Dialog Box
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   Use the **Connect to a Master Data Services Database** dialog box to select a [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] database.  
   

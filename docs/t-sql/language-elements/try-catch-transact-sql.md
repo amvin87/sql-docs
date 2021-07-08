@@ -1,12 +1,13 @@
 ---
+description: "TRY...CATCH (Transact-SQL)"
 title: "TRY...CATCH (Transact-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/16/2017"
 ms.prod: sql
-ms.prod_service: "database-engine, sql-database, sql-data-warehouse, pdw"
+ms.prod_service: "database-engine, sql-database, synapse-analytics, pdw"
 ms.reviewer: ""
 ms.technology: t-sql
-ms.topic: "language-reference"
+ms.topic: reference
 f1_keywords: 
   - "BEGIN_TRY_TSQL"
   - "BEGIN_CATCH_TSQL"
@@ -26,12 +27,12 @@ helpviewer_keywords:
   - "BEGIN TRY statement"
   - "CATCH block"
 ms.assetid: 248df62a-7334-4bca-8262-235a28f4b07f
-author: rothja
-ms.author: jroth
-monikerRange: ">=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||=sqlallproducts-allversions||>=sql-server-linux-2017||=azuresqldb-mi-current"
+author: cawrites
+ms.author: chadam
+monikerRange: ">=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current"
 ---
 # TRY...CATCH (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
+[!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
 
   Implements error handling for [!INCLUDE[tsql](../../includes/tsql-md.md)] that is similar to the exception handling in the [!INCLUDE[msCoName](../../includes/msconame-md.md)] Visual C# and [!INCLUDE[msCoName](../../includes/msconame-md.md)] Visual C++ languages. A group of [!INCLUDE[tsql](../../includes/tsql-md.md)] statements can be enclosed in a TRY block. If an error occurs in the TRY block, control is passed to another group of statements that is enclosed in a CATCH block.  
@@ -50,7 +51,9 @@ END CATCH
 [ ; ]  
 ```  
   
-## Arguments  
+[!INCLUDE[sql-server-tsql-previous-offline-documentation](../../includes/sql-server-tsql-previous-offline-documentation.md)]
+
+## Arguments
  *sql_statement*  
  Is any [!INCLUDE[tsql](../../includes/tsql-md.md)] statement.  
   
@@ -132,7 +135,7 @@ BEGIN CATCH
 END CATCH;   
 ```  
   
- The ERROR\_\* functions also work in a `CATCH` block inside a [natively compiled stored procedure](../../relational-databases/in-memory-oltp/natively-compiled-stored-procedures.md).  
+ The ERROR\_\* functions also work in a `CATCH` block inside a [natively compiled stored procedure](../../relational-databases/in-memory-oltp/a-guide-to-query-processing-for-memory-optimized-tables.md).  
   
 ## Errors Unaffected by a TRY...CATCH Construct  
  TRY...CATCH constructs do not trap the following conditions:  
@@ -310,7 +313,8 @@ BEGIN CATCH
         ROLLBACK TRANSACTION;  
     END;  
   
-    -- Test whether the transaction is committable.  
+    -- Test whether the transaction is committable.
+    -- You may want to commit a transaction in a catch block if you want to commit changes to statements that ran prior to the error.
     IF (XACT_STATE()) = 1  
     BEGIN  
         PRINT  
@@ -359,5 +363,3 @@ GO
  [XACT_STATE &#40;Transact-SQL&#41;](../../t-sql/functions/xact-state-transact-sql.md)   
  [SET XACT_ABORT &#40;Transact-SQL&#41;](../../t-sql/statements/set-xact-abort-transact-sql.md)  
   
-  
-

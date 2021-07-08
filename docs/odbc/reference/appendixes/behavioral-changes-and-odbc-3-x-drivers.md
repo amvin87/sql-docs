@@ -1,4 +1,5 @@
 ---
+description: "Behavioral Changes and ODBC 3.x Drivers"
 title: "Behavioral Changes and ODBC 3.x Drivers | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "sql_attr_odbc_version [ODBC]"
   - "backward compatibility [ODBC], behavioral changes"

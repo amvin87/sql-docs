@@ -1,4 +1,5 @@
 ---
+description: "getCharacterStream Method (int)"
 title: "getCharacterStream Method (int) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerResultSet.getCharacterStream (int)"
 apilocation: 

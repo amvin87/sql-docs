@@ -1,4 +1,5 @@
 ---
+description: "deletesAreDetected Method (SQLServerDatabaseMetaData)"
 title: "deletesAreDetected Method (SQLServerDatabaseMetaData) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/20/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLServerDatabaseMetaData.deletesAreDetected"
 apilocation: 

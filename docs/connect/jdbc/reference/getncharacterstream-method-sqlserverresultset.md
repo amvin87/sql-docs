@@ -1,4 +1,5 @@
 ---
+description: "getNCharacterStream Method (SQLServerResultSet)"
 title: "getNCharacterStream Method (SQLServerResultSet) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 69620047-78fd-4be9-a245-1851afaeac1b
 author: David-Engel
 ms.author: v-daenge

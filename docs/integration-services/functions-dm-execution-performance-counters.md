@@ -1,4 +1,5 @@
 ---
+description: "dm_execution_performance_counters (SSISDB Database)"
 title: "dm_execution_performance_counters (SSISDB Database) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/04/2017"
@@ -13,7 +14,7 @@ ms.author: chugu
 ---
 # Functions - dm_execution_performance_counters
 
-[!INCLUDE[ssis-appliesto](../includes/ssis-appliesto-ssvrpluslinux-asdb-asdw-xxx.md)]
+[!INCLUDE[sqlserver-ssis](../includes/applies-to-version/sqlserver-ssis.md)]
 
   Returns the performance statistics for an execution that is running on the [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] server.  
   
@@ -57,14 +58,18 @@ dm_execution_performance_counters [ @execution_id = ] execution_id
 |counter_name|**nvarchar(128)**|The name of the counter.|See the **Remarks** section of values.|  
 |counter_value|**BigInt**|Value returned by the counter.||  
   
-## Example  
+## Examples  
+
+### A. Return statistics for a running execution
+
  In the following example, the function returns statistics for a running execution with an ID of 34.  
   
 ```sql
 select * from [catalog].[dm_execution_performance_counters] (34)  
 ```  
   
-## Example  
+### B. Return statistics for all running executions
+
  In the following example, the function returns statistics for all the executions running on the [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] server, depending on your permissions.  
   
 ```sql

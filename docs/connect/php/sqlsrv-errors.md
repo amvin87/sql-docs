@@ -1,12 +1,13 @@
 ---
-title: "sqlsrv_errors | Microsoft Docs"
+title: "sqlsrv_errors"
+description: "API reference for the sqlsrv_errors function in the Microsoft SQLSRV Driver for PHP for SQL Server."
 ms.custom: ""
 ms.date: "01/19/2017"
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "sqlsrv_errors"
 apitype: "NA"

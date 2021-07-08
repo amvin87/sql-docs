@@ -1,4 +1,5 @@
 ---
+description: "Create a Model Deployment Package by Using the Wizard"
 title: Create a Model Deployment Package with Wizard
 ms.custom: "seo-lt-2019"
 ms.date: "03/01/2017"
@@ -12,12 +13,12 @@ helpviewer_keywords:
   - "models [Master Data Services], creating a deployment package"
   - "creating packages [Master Data Services]"
 ms.assetid: b24ec4c2-1378-4c72-ac69-4ec2647030f0
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Create a Model Deployment Package by Using the Wizard
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   Use the [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] model deployment wizard to create a package of the model objects only. If you need to include data in the package, see [Create a Model Deployment Package by Using MDSModelDeploy](../master-data-services/create-a-model-deployment-package-by-using-mdsmodeldeploy.md).  
   

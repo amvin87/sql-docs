@@ -1,4 +1,5 @@
 ---
+description: "SET ANSI Command"
 title: "SET ANSI Command | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "set ANSI command [ODBC]"
 ms.assetid: cf9a01b2-14bf-458c-a73c-2a58ddef32d8

@@ -1,4 +1,5 @@
 ---
+description: "CREATE TABLE Statement Limitations"
 title: "CREATE TABLE Statement Limitations | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "CREATE TABLE statement limitations [ODBC]"
   - "ODBC SQL grammar, CREATE TABLE statement limitations"

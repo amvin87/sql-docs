@@ -1,4 +1,5 @@
 ---
+description: "getNString Method (java.lang.String) (SQLServerResultSet)"
 title: "getNString Method (java.lang.String) (SQLServerResultSet) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 546d77e2-723a-42ac-ba3f-fabf2395d376
 author: David-Engel
 ms.author: v-daenge

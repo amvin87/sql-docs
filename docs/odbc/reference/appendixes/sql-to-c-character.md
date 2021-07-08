@@ -1,4 +1,5 @@
 ---
+description: "SQL to C: Character"
 title: "SQL to C: Character | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2019"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "converting data from SQL to C types [ODBC], character"
   - "character data type [ODBC]"

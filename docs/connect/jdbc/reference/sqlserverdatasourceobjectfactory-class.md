@@ -1,4 +1,5 @@
 ---
+description: "SQLServerDataSourceObjectFactory Class"
 title: "SQLServerDataSourceObjectFactory Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: b616632b-5987-470d-b36c-b22fa9213145
 author: David-Engel
 ms.author: v-daenge

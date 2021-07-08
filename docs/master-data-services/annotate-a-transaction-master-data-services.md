@@ -1,4 +1,5 @@
 ---
+description: "Annotate a Transaction (Master Data Services)"
 title: Annotate a Transaction
 ms.custom: ""
 ms.date: "03/01/2017"
@@ -10,12 +11,12 @@ ms.topic: conceptual
 helpviewer_keywords: 
   - "annotations [Master Data Services], for transactions"
 ms.assetid: f5a6b2ca-56de-4e42-9da8-fba0ac3e8d92
-author: lrtoyou1223
+author: chugugrace 
 ms.author: lle
 ---
 # Annotate a Transaction (Master Data Services)
 
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+[!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
   In [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], annotate a transaction when you want to provide supporting details about the transaction for historical purposes.  
   

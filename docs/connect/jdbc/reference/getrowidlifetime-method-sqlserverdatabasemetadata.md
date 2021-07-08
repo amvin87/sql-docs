@@ -1,4 +1,5 @@
 ---
+description: "getRowIdLifetime Method (SQLServerDatabaseMetaData)"
 title: "getRowIdLifetime Method (SQLServerDatabaseMetaData) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 317c0b44-fe3f-4142-9cab-e40e4c4fe070
 author: David-Engel
 ms.author: v-daenge

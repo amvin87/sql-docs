@@ -1,4 +1,5 @@
 ---
+description: "Block Cursors, Scrollable Cursors, and Backward Compatibility"
 title: "Block Cursors, Scrollable Cursors, and Backward Compatibility | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords: 
   - "scrollable cursors [ODBC]"
   - "cursors [ODBC], backward compatibility"

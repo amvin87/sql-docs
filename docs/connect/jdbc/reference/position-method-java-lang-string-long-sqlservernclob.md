@@ -1,4 +1,5 @@
 ---
+description: "position Method (java.lang.String, long) (SQLServerNClob)"
 title: "position Method (java.lang.String, long) (SQLServerNClob) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 46d4beec-831a-449f-98b6-322a80cc499a
 author: David-Engel
 ms.author: v-daenge

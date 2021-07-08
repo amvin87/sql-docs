@@ -1,4 +1,5 @@
 ---
+description: "sysextendedarticlesview (Transact-SQL)"
 title: "sysextendedarticlesview (Transact-SQL) | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/03/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: "database-engine"
 ms.reviewer: ""
 ms.technology: replication
-ms.topic: "language-reference"
+ms.topic: "reference"
 f1_keywords: 
   - "sysextendedarticlesview_TSQL"
   - "sysextendedarticlesview"
@@ -15,11 +16,11 @@ dev_langs:
 helpviewer_keywords: 
   - "sysextendedarticlesview view"
 ms.assetid: 8bdd22f7-c268-49b6-820c-3fe603feb128
-author: "stevestein"
-ms.author: "sstein"
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 ---
 # sysextendedarticlesview (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
+[!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   The **sysextendedarticlesview** view provides information about published articles. This view is stored in the distribution database.  
   

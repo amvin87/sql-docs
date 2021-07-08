@@ -1,4 +1,5 @@
 ---
+description: "getDateTimeOffset Method (String)"
 title: "getDateTimeOffset Method (String) | Microsoft Docs"
 ms.custom: ""
 ms.date: "01/19/2017"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: fedb1d75-0c3d-4eb3-ae65-da0e153265cc
 author: David-Engel
 ms.author: v-daenge

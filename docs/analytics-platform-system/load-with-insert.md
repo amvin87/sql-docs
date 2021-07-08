@@ -1,12 +1,12 @@
 ---
 title: Load data with INSERT
 description: Using the T-SQL INSERT statement to load data into a Parallel Data Warehouse (PDW) distributed or replicated table.
-author: mzaman1 
+author: charlesfeddersen 
 ms.prod: sql
 ms.technology: data-warehouse
 ms.topic: conceptual
 ms.date: 04/17/2018
-ms.author: murshedz
+ms.author: charlesf
 ms.reviewer: martinle
 ms.custom: seo-dt-2019
 ---
@@ -152,7 +152,7 @@ The following table defines the accepted formats and rules for inserting literal
   
 ## See Also  
  
-[Distributed data](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-distributed-data/)  
+[Distributed data](/azure/synapse-analytics/sql-data-warehouse/massively-parallel-processing-mpp-architecture)  
 [INSERT](../t-sql/statements/insert-transact-sql.md)  
   
 <!-- MISSING LINKS

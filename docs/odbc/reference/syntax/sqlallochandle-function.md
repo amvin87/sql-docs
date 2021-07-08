@@ -1,4 +1,5 @@
 ---
+description: "SQLAllocHandle Function"
 title: "SQLAllocHandle Function | Microsoft Docs"
 ms.custom: ""
 ms.date: "07/18/2019"
@@ -6,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ""
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname: 
   - "SQLAllocHandle"
 apilocation: 
